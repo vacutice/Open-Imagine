@@ -6,4 +6,5 @@
 * [QED：光和物质的奇妙理论-R·P·费曼.epub](./QED：光和物质的奇妙理论-R·P·费曼.epub)
 * [啤酒与肥皂：用量子理论重新定义世界.azw3](./啤酒与肥皂：用量子理论重新定义世界.azw3)
 * [啤酒与肥皂：用量子理论重新定义世界.epub](./啤酒与肥皂：用量子理论重新定义世界.epub)
+* [How to Write and Illustrate a Scientific Paper.pdf](./How%20to%20Write%20and%20Illustrate%20a%20Scientific%20Paper.pdf)
 * [](./)
