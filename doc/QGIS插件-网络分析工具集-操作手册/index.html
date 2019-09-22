@@ -1,0 +1,480 @@
+<!DOCTYPE html><!--[if IE]>  <html class="ie"> <![endif]-->
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>
+			QGIS插件-网络分析工具集-操作手册
+		</title>
+		<link rel="stylesheet" type="text/css" href="inside me, now/style.css" />
+	</head>
+	<body>
+		<div class="stl_02">
+			<div class="stl_03">
+				<object data="inside me, now/img_02.svg" type="image/svg+xml" class="stl_04" style="position:absolute; width:49.5833em; height:70.0833em;">
+					<embed src="inside me, now/img_02.svg" type="image/svg+xml" />
+				</object>
+			</div>
+			<div class="stl_view">
+				<div class="stl_05 stl_06">
+					<div class="stl_01" style="left:15.77em;top: 22.2445em; z-index:9; "><span class="stl_07 stl_08 stl_09" style="font-weight:bold;">（网络分析工具集） &nbsp;</span></div>
+					<div class="stl_01" style="left:19.47em;top: 24.7291em; "><span class="stl_10 stl_08 stl_11" style="font-weight:bold;">（插件版本：1.0） &nbsp;</span></div>
+					<div class="stl_01" style="left:19.79em;top: 32.391em; z-index:26; "><span class="stl_12 stl_13 stl_14" style="font-weight:bold; word-spacing:0.257em;">QGIS </span><span class="stl_07 stl_08 stl_15" style="font-weight:bold;">插件 &nbsp;</span></div>
+					<div class="stl_01" style="left:18.78em;top: 35.0545em; z-index:32; "><span class="stl_07 stl_08 stl_16" style="font-weight:bold;">用户使用指南 &nbsp;</span></div>
+					<div class="stl_01" style="left:19.47em;top: 55.5612em; z-index:40; "><span class="stl_17 stl_18 stl_19">♂ D e e p & h a r D&nbsp;</span></div>
+					<div class="stl_01" style="left:20.61em;top: 57.6593em; z-index:44; "><span class="stl_20 stl_21 stl_22" style="word-spacing:0.2275em;">2019 </span><span class="stl_23 stl_08 stl_15" style="word-spacing:0em;">年 </span><span class="stl_20 stl_21 stl_15" style="word-spacing:0.2299em;">6 </span><span class="stl_23 stl_08 stl_15" style="word-spacing:0.2299em;">月 &nbsp;</span></div>
+				</div>
+			</div>
+		</div>
+		<div class="stl_02">
+			<div class="stl_view">
+				<div class="stl_05 stl_06">
+					<div class="stl_01" style="left:22.05em;top: 8.2606em; "><span class="stl_24 stl_08 stl_15" style="word-spacing:0.51em;">目 录 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 12.6091em; z-index:9; "><span class="stl_25 stl_13 stl_15" style="word-spacing:0.2499em;">01. </span><span class="stl_26 stl_08 stl_27">插件简介</span><span class="stl_25 stl_13 stl_28">....................................................................................................................................1 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 15.8591em; z-index:150; "><span class="stl_25 stl_13 stl_15" style="word-spacing:0.2499em;">02. </span><span class="stl_26 stl_08 stl_27">插件管理</span><span class="stl_25 stl_13 stl_28">....................................................................................................................................1 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 19.1091em; z-index:291; "><span class="stl_25 stl_13 stl_15" style="word-spacing:0.2499em;">03. </span><span class="stl_26 stl_08 stl_27">界面介绍</span><span class="stl_25 stl_13 stl_28">....................................................................................................................................2 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 22.3591em; z-index:433; "><span class="stl_25 stl_13 stl_15" style="word-spacing:0.2499em;">04. </span><span class="stl_26 stl_08 stl_29">插件的使用</span><span class="stl_25 stl_13 stl_28">................................................................................................................................4 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 25.6091em; z-index:687; "><span class="stl_25 stl_13 stl_15" style="word-spacing:0.2499em;">05. </span><span class="stl_26 stl_08 stl_30">常见错误与解决方法</span><span class="stl_25 stl_13 stl_28">..............................................................................................................17 &nbsp;</span></div>
+				</div>
+			</div>
+		</div>
+		<div class="stl_02">
+			<div class="stl_03">
+				<object data="inside me, now/img_03.svg" type="image/svg+xml" class="stl_04" style="position:absolute; width:49.5833em; height:70.0833em;">
+					<embed src="inside me, now/img_03.svg" type="image/svg+xml" />
+				</object>
+			</div>
+			<div class="stl_view">
+				<div class="stl_05 stl_06">
+					<div class="stl_01" style="left:7.5em;top: 6.2525em; z-index:8; "><span class="stl_31 stl_13 stl_32" style="font-weight:bold; word-spacing:0.1466em;">01. </span><span class="stl_23 stl_08 stl_15">插件简介 &nbsp;</span></div>
+					<div class="stl_01" style="left:9.5em;top: 9.6422em; z-index:34; "><span class="stl_33 stl_13 stl_34" style="word-spacing:0.037em;">QGIS </span><span class="stl_35 stl_08 stl_15" style="word-spacing:0.0396em;">网络分析工具集是一款 </span><span class="stl_33 stl_13 stl_34" style="word-spacing:0.037em;">QGIS </span><span class="stl_35 stl_08 stl_15" style="word-spacing:0.0397em;">插件，为本小组 </span><span class="stl_33 stl_13 stl_15" style="word-spacing:0.04em;">4 </span><span class="stl_35 stl_08 stl_15">人所设计和开发，目 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 11.6239em; z-index:75; "><span class="stl_35 stl_08 stl_15">前是第一版</span><span class="stl_35 stl_08 stl_36">，</span><span class="stl_35 stl_08 stl_15">该</span><span class="stl_35 stl_08 stl_15">插件的目的是将独立的地理网络的分析工具集成起来</span><span class="stl_35 stl_08 stl_36">，</span><span class="stl_35 stl_08 stl_15">第</span><span class="stl_35 stl_08 stl_15">一版集 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 13.5639em; z-index:86; "><span class="stl_35 stl_08 stl_15">成了五项工具</span><span class="stl_35 stl_08 stl_37">，</span><span class="stl_35 stl_08 stl_15">我</span><span class="stl_35 stl_08 stl_15">们对第二版的最大期望是能够让用户方便地把自定义的工具集 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 15.5139em; "><span class="stl_35 stl_08 stl_15">成进来。 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 17.9716em; z-index:123; "><span class="stl_38 stl_39 stl_15" style="word-spacing:0.4512em;"> </span><span class="stl_40 stl_08 stl_41" style="font-weight:bold;">优点及特色 &nbsp;</span></div>
+					<div class="stl_01" style="left:9.5em;top: 20.0222em; z-index:127; "><span class="stl_33 stl_13 stl_15" style="word-spacing:0.2339em;">(1) </span><span class="stl_35 stl_08 stl_15">安装包很轻巧，安装简单； &nbsp;</span></div>
+					<div class="stl_01" style="left:9.5em;top: 21.9722em; z-index:181; "><span class="stl_33 stl_13 stl_15" style="word-spacing:0.2339em;">(2) </span><span class="stl_35 stl_08 stl_15" style="word-spacing:-0.0002em;">易于管理，有 </span><span class="stl_33 stl_13 stl_34" style="word-spacing:-0.003em;">QGIS </span><span class="stl_35 stl_08 stl_15" style="word-spacing:0em;">的 </span><span class="stl_33 stl_13 stl_42" style="word-spacing:0.0015em;">plugin manager</span><span class="stl_33 stl_13 stl_15" style="word-spacing:0.2505em;">&nbsp;</span><span class="stl_35 stl_08 stl_15" style="word-spacing:0.25em;">和 </span><span class="stl_33 stl_13 stl_43" style="word-spacing:-0.0008em;">plugin reloader</span><span class="stl_33 stl_13 stl_15" style="word-spacing:0.2433em;">&nbsp;</span><span class="stl_35 stl_08 stl_15">的支持； &nbsp;</span></div>
+					<div class="stl_01" style="left:9.5em;top: 23.9122em; z-index:190; "><span class="stl_33 stl_13 stl_34" style="word-spacing:0.2395em;">(3) UI </span><span class="stl_35 stl_08 stl_44">简洁美观，基本上一看就懂； &nbsp;</span></div>
+					<div class="stl_01" style="left:9.5em;top: 25.8622em; z-index:218; "><span class="stl_33 stl_13 stl_15" style="word-spacing:0.2339em;">(4) </span><span class="stl_35 stl_08 stl_45">除了“最短路径分析</span><span class="stl_35 stl_08 stl_46">”</span><span class="stl_35 stl_08 stl_47">、</span><span class="stl_35 stl_08 stl_48">“</span><span class="stl_35 stl_08 stl_49">最小生成树计算”这些常见的网络分析工具， &nbsp;</span></div>
+					<div class="stl_01" style="left:11.15em;top: 27.8022em; z-index:268; "><span class="stl_35 stl_08 stl_15">还提供有高级网络分析工具</span><span class="stl_35 stl_08 stl_50">，</span><span class="stl_35 stl_08 stl_50">如</span><span class="stl_35 stl_08 stl_15">“</span><span class="stl_35 stl_08 stl_14">线</span><span class="stl_33 stl_13 stl_51">/</span><span class="stl_35 stl_08 stl_52">面最小跨度生成三角网</span><span class="stl_35 stl_08 stl_53">”</span><span class="stl_35 stl_08 stl_54">、</span><span class="stl_35 stl_08 stl_15">“</span><span class="stl_35 stl_08 stl_15">重要节 &nbsp;</span></div>
+					<div class="stl_01" style="left:11.15em;top: 29.7839em; z-index:290; "><span class="stl_35 stl_08 stl_15">点提取”以及“根据节点位置划分网络</span><span class="stl_35 stl_08 stl_53">”</span><span class="stl_35 stl_08 stl_53">； &nbsp;</span></div>
+					<div class="stl_01" style="left:9.5em;top: 31.6922em; z-index:293; "><span class="stl_33 stl_13 stl_15" style="word-spacing:0.2339em;">(5) </span><span class="stl_35 stl_08 stl_15">每个工具的参数设置较少、容易理解，而且给出了中文的解释说明； &nbsp;</span></div>
+					<div class="stl_01" style="left:9.5em;top: 33.6422em; z-index:326; "><span class="stl_33 stl_13 stl_15" style="word-spacing:0.2339em;">(6) </span><span class="stl_35 stl_08 stl_15">插件运行稳定、高效； &nbsp;</span></div>
+					<div class="stl_01" style="left:9.5em;top: 35.5822em; z-index:339; "><span class="stl_33 stl_13 stl_15" style="word-spacing:0.2339em;">(7) </span><span class="stl_35 stl_08 stl_15">实时的运行日志输出帮助用户进行错误监控； &nbsp;</span></div>
+					<div class="stl_01" style="left:9.5em;top: 37.5322em; "><span class="stl_33 stl_13 stl_15" style="word-spacing:0.2339em;">(8) </span><span class="stl_35 stl_08 stl_55">具有一定的可扩展性。源码中功能按钮的处理槽都很容易定位，而且网 &nbsp;</span></div>
+					<div class="stl_01" style="left:11.15em;top: 39.5039em; "><span class="stl_35 stl_08 stl_55">络分析的核心算法是独立于处理槽的，用户只要理解了处理槽函数中少 &nbsp;</span></div>
+					<div class="stl_01" style="left:11.15em;top: 41.4539em; "><span class="stl_35 stl_08 stl_15">量的代码就能将自己的网络分析算法集成到插件中； &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 43.9115em; z-index:452; "><span class="stl_38 stl_39 stl_15" style="word-spacing:0.4512em;"> </span><span class="stl_40 stl_08 stl_56" style="font-weight:bold;">环境要求 &nbsp;</span></div>
+					<div class="stl_01" style="left:9.25em;top: 45.9622em; z-index:490; "><span class="stl_35 stl_08 stl_15" style="word-spacing:-0.0002em;">本插件在 </span><span class="stl_33 stl_13 stl_34" style="word-spacing:-0.006em;">QGIS 3.6</span><span class="stl_33 stl_13 stl_15" style="word-spacing:0.2529em;">&nbsp;</span><span class="stl_35 stl_08 stl_15" style="word-spacing:-0.0005em;">中开发，运行本插件的最低 </span><span class="stl_33 stl_13 stl_34" style="word-spacing:-0.003em;">QGIS </span><span class="stl_35 stl_08 stl_15" style="word-spacing:0.2499em;">版本为 </span><span class="stl_33 stl_13 stl_34" style="word-spacing:0.004em;">QGIS 3.0 &nbsp;</span></div>
+					<div class="stl_01" style="left:9.25em;top: 47.2622em; z-index:502; "><span class="stl_35 stl_08 stl_15">（详见插件的元数据文件：</span><span class="stl_33 stl_13 stl_57">metadata.txt</span><span class="stl_35 stl_08 stl_57">） &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 49.0516em; z-index:524; "><span class="stl_38 stl_39 stl_15" style="word-spacing:0.4512em;"> </span><span class="stl_58 stl_59 stl_60" style="font-weight:bold; word-spacing:0.0277em;">github </span><span class="stl_40 stl_08 stl_15" style="font-weight:bold;">地址 &nbsp;</span></div>
+					<div class="stl_01" style="left:9.25em;top: 51.1622em; z-index:578; "><span class="stl_35 stl_08 stl_15">主页：</span><a href="https://github.com/Team-For-WebGIS/Network_Toolkit" target="_blank"><span class="stl_61 stl_13 stl_62">https://github.com/Team-For-WebGIS/Network_Toolkit &nbsp;</span></a></div>
+					<div class="stl_01" style="left:9.25em;top: 52.4622em; z-index:639; "><span class="stl_33 stl_13 stl_63" style="word-spacing:-0.0369em;">Clone: </span><a href="https://github.com/Team-For-WebGIS/Network_Toolkit.git" target="_blank"><span class="stl_61 stl_13 stl_64">https://github.com/Team-For-WebGIS/Network_Toolkit.git &nbsp;</span></a></div>
+					<div class="stl_01" style="left:9.25em;top: 53.7622em; z-index:715; "><span class="stl_33 stl_13 stl_65" style="word-spacing:0.0046em;">Zip </span><span class="stl_35 stl_08 stl_15">下载：</span><a href="https://github.com/Team-For-WebGIS/Network_Toolkit/archive/master.zip" target="_blank"><span class="stl_66 stl_13 stl_67">https://github.com/Team-For-WebGIS/Network_Toolkit/archive/master.zip &nbsp;</span></a></div>
+					<div class="stl_01" style="left:7.5em;top: 56.2725em; z-index:723; "><span class="stl_31 stl_13 stl_32" style="font-weight:bold; word-spacing:0.1466em;">02. </span><span class="stl_23 stl_08 stl_15">插件管理 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 60.2116em; z-index:726; "><span class="stl_38 stl_39 stl_15" style="word-spacing:0.4512em;"> </span><span class="stl_40 stl_08 stl_15" style="font-weight:bold;">安装 &nbsp;</span></div>
+					<div class="stl_01" style="left:11em;top: 62.2622em; z-index:754; "><span class="stl_35 stl_08 stl_15" style="word-spacing:0.1096em;">下载安装包后解压至 </span><span class="stl_33 stl_13 stl_34" style="word-spacing:0.107em;">QGIS </span><span class="stl_35 stl_08 stl_15" style="word-spacing:0.1096em;">插件安装目录，可以是 </span><span class="stl_33 stl_13 stl_34" style="word-spacing:0.107em;">QGIS </span><span class="stl_35 stl_08 stl_15">默认的插件安 &nbsp;</span></div>
+					<div class="stl_01" style="left:24.61em;top: 64.255em; "><span class="stl_68 stl_13 stl_15">1</span></div>
+				</div>
+			</div>
+		</div>
+		<div class="stl_02">
+			<div class="stl_03">
+				<object data="inside me, now/img_05.svg" type="image/svg+xml" class="stl_04" style="position:absolute; width:49.5833em; height:70.0833em;">
+					<embed src="inside me, now/img_05.svg" type="image/svg+xml" />
+				</object>
+			</div>
+			<div class="stl_view">
+				<div class="stl_05 stl_06">
+					<div class="stl_01" style="left:9.25em;top: 6.0422em; "><span class="stl_35 stl_08 stl_69" style="word-spacing:0.2337em;">装目录也可以是用户在环境变量中自己配置的插件安装目录。在 </span><span class="stl_33 stl_13 stl_22" style="word-spacing:0.2514em;">win10 </span><span class="stl_35 stl_08 stl_22" style="word-spacing:0.2514em;">下 &nbsp;</span></div>
+					<div class="stl_01" style="left:9.25em;top: 7.3422em; z-index:50; "><span class="stl_33 stl_13 stl_34" style="word-spacing:-0.003em;">QGIS </span><span class="stl_35 stl_08 stl_15">的默认插件安装目录为： &nbsp;</span></div>
+					<div class="stl_01" style="left:11em;top: 8.6422em; "><span class="stl_33 stl_13 stl_60">C:\Users\username\AppData\Roaming\QGIS\QGIS3\profiles\default\python\ &nbsp;</span></div>
+					<div class="stl_01" style="left:9.25em;top: 9.9422em; z-index:127; "><span class="stl_33 stl_13 stl_60">plugins\ &nbsp;</span></div>
+					<div class="stl_01" style="left:11em;top: 11.2422em; z-index:167; "><span class="stl_35 stl_08 stl_15" style="word-spacing:-0.0002em;">解压后重启 </span><span class="stl_33 stl_13 stl_34" style="word-spacing:-0.003em;">QGIS </span><span class="stl_35 stl_08 stl_15">使插件安装生效</span><span class="stl_35 stl_08 stl_46">。</span><span class="stl_35 stl_08 stl_15">然</span><span class="stl_35 stl_08 stl_15" style="word-spacing:-0.0005em;">后就能在 </span><span class="stl_33 stl_13 stl_34" style="word-spacing:0.247em;">QGIS </span><span class="stl_35 stl_08 stl_15" style="word-spacing:0.25em;">的 </span><span class="stl_33 stl_13 stl_42" style="word-spacing:-0.0585em;">plugin manager &nbsp;</span></div>
+					<div class="stl_01" style="left:9.25em;top: 12.5422em; z-index:193; "><span class="stl_35 stl_08 stl_15" style="word-spacing:0.2497em;">中找到安装后的插件 </span><span class="stl_33 stl_13 stl_70" style="word-spacing:-0.0053em;">“ Network Toolkit“</span><span class="stl_35 stl_08 stl_70" style="word-spacing:-0.0053em;">。 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 14.3916em; z-index:196; "><span class="stl_38 stl_39 stl_15" style="word-spacing:0.4512em;"> </span><span class="stl_40 stl_08 stl_15" style="font-weight:bold;">卸载 &nbsp;</span></div>
+					<div class="stl_01" style="left:11em;top: 16.4422em; z-index:234; "><span class="stl_35 stl_08 stl_15" style="word-spacing:0em;">和 </span><span class="stl_33 stl_13 stl_34" style="word-spacing:-0.003em;">QGIS </span><span class="stl_35 stl_08 stl_15">其它插件的卸载一样</span><span class="stl_35 stl_08 stl_71">，</span><span class="stl_35 stl_08 stl_15" style="word-spacing:-0.0004em;">在 </span><span class="stl_33 stl_13 stl_42" style="word-spacing:-0.0287em;">plugin manager </span><span class="stl_35 stl_08 stl_15">中找到该插件</span><span class="stl_35 stl_08 stl_71">，</span><span class="stl_35 stl_08 stl_48">选</span><span class="stl_35 stl_08 stl_15">中后 &nbsp;</span></div>
+					<div class="stl_01" style="left:9.25em;top: 17.7739em; "><span class="stl_35 stl_08 stl_15">点击右下角的卸载按钮。 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 19.5916em; z-index:250; "><span class="stl_38 stl_39 stl_15" style="word-spacing:0.4512em;"> </span><span class="stl_40 stl_08 stl_15" style="font-weight:bold;">重载 &nbsp;</span></div>
+					<div class="stl_01" style="left:11em;top: 21.6422em; z-index:294; "><span class="stl_35 stl_08 stl_15" style="word-spacing:-0.0002em;">推荐使用 </span><span class="stl_33 stl_13 stl_34" style="word-spacing:-0.003em;">QGIS </span><span class="stl_35 stl_08 stl_15" style="word-spacing:0em;">的 </span><span class="stl_33 stl_13 stl_57" style="word-spacing:-0.0323em;">plugin reloader </span><span class="stl_35 stl_08 stl_72" style="word-spacing:0.0041em;">进行插件的重载，除此之外，在 </span><span class="stl_33 stl_13 stl_72">plugin &nbsp;</span></div>
+					<div class="stl_01" style="left:9.25em;top: 22.9422em; z-index:317; "><span class="stl_33 stl_13 stl_73" style="word-spacing:0.0053em;">manager </span><span class="stl_35 stl_08 stl_74" style="word-spacing:-0.0023em;">中重新勾选该插件或者重启 </span><span class="stl_33 stl_13 stl_34" style="word-spacing:-0.003em;">QGIS </span><span class="stl_35 stl_08 stl_15">也能达到重载插件的目的。 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 25.4525em; z-index:336; "><span class="stl_31 stl_13 stl_32" style="font-weight:bold; word-spacing:0.2395em;">03. </span><span class="stl_23 stl_08 stl_15">界面介绍 &nbsp;</span></div>
+					<div class="stl_01" style="left:19.76em;top: 52.2422em; z-index:341; "><span class="stl_35 stl_08 stl_15" style="word-spacing:0em;">图 </span><span class="stl_33 stl_13 stl_15" style="word-spacing:0.2469em;">3-1 </span><span class="stl_35 stl_08 stl_15">主对话框界面图 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 54.7316em; z-index:355; "><span class="stl_38 stl_39 stl_15" style="word-spacing:0.4512em;"> </span><span class="stl_40 stl_08 stl_75" style="font-weight:bold;">左侧功能按钮 &nbsp;</span></div>
+					<div class="stl_01" style="left:9.5em;top: 56.8139em; "><span class="stl_35 stl_08 stl_76">主界面的左侧有许多按钮，大部分的功能都需要用户点击这些按钮来调用， &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 58.7639em; "><span class="stl_35 stl_08 stl_15">所以把这一栏的按钮称为功能按钮。 &nbsp;</span></div>
+					<div class="stl_01" style="left:24.61em;top: 64.255em; "><span class="stl_68 stl_13 stl_15">2</span></div>
+				</div>
+			</div>
+		</div>
+		<div class="stl_02">
+			<div class="stl_03">
+				<object data="inside me, now/img_07.svg" type="image/svg+xml" class="stl_04" style="position:absolute; width:49.5833em; height:70.0833em;">
+					<embed src="inside me, now/img_07.svg" type="image/svg+xml" />
+				</object>
+			</div>
+			<div class="stl_view">
+				<div class="stl_05 stl_06">
+					<div class="stl_01" style="left:9.5em;top: 6.0739em; z-index:14; "><span class="stl_35 stl_08 stl_15">功能按钮被分为两个部分</span><span class="stl_35 stl_08 stl_37">。</span><span class="stl_35 stl_08 stl_15">用</span><span class="stl_35 stl_08 stl_15">户通过点击最上面的三个按钮和和一个下拉框 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 8.0239em; z-index:55; "><span class="stl_35 stl_08 stl_15">实现数据的载入</span><span class="stl_35 stl_08 stl_77">，</span><span class="stl_35 stl_08 stl_15">图</span><span class="stl_35 stl_08 stl_15">层的切换</span><span class="stl_35 stl_08 stl_77">、</span><span class="stl_35 stl_08 stl_15">导</span><span class="stl_35 stl_08 stl_15">出和移除</span><span class="stl_35 stl_08 stl_77">；</span><span class="stl_35 stl_08 stl_15">下</span><span class="stl_35 stl_08 stl_15">面的几个按钮在用户点击后会运 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 9.9639em; "><span class="stl_35 stl_08 stl_15">行对应的算法来处理数据，每个按钮对应一种网络分析工具。 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 12.4316em; z-index:103; "><span class="stl_38 stl_39 stl_15" style="word-spacing:0.4512em;"> </span><span class="stl_40 stl_08 stl_75" style="font-weight:bold;">图层概览画布 &nbsp;</span></div>
+					<div class="stl_01" style="left:9.25em;top: 14.5139em; "><span class="stl_35 stl_08 stl_78">主界面右边最大的白色画布区域可以显示用户在“选择图层”下拉框中选中 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 15.8139em; "><span class="stl_35 stl_08 stl_15">的图层。 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 17.6316em; z-index:147; "><span class="stl_38 stl_39 stl_15" style="word-spacing:0.4512em;"> </span><span class="stl_40 stl_08 stl_41" style="font-weight:bold;">参数设置框 &nbsp;</span></div>
+					<div class="stl_01" style="left:9.25em;top: 19.7139em; z-index:181; "><span class="stl_35 stl_08 stl_15">最小跨度三角网的生成和最小生成树的计算的参数设置被放到了主界面</span><span class="stl_35 stl_08 stl_79">，</span><span class="stl_35 stl_08 stl_79">其 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 21.0139em; z-index:216; "><span class="stl_35 stl_08 stl_15">它工具在子工具对话框中有单独的参数设置框</span><span class="stl_35 stl_08 stl_37">。</span><span class="stl_35 stl_08 stl_15">下</span><span class="stl_35 stl_08 stl_15">图以最短路径分析的对话框为 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 22.2822em; z-index:229; "><span class="stl_35 stl_08 stl_80" style="word-spacing:0.0799em;">例，在 </span><span class="stl_33 stl_13 stl_81" style="word-spacing:0.0024em;">Parameters </span><span class="stl_35 stl_08 stl_82">选项卡中，可以设置三个参数：输入的网络图层、路径的起点 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 23.6139em; "><span class="stl_35 stl_08 stl_15">和路径的终点。 &nbsp;</span></div>
+					<div class="stl_01" style="left:18.09em;top: 52.1822em; z-index:275; "><span class="stl_35 stl_08 stl_15" style="word-spacing:0em;">图 </span><span class="stl_33 stl_13 stl_15" style="word-spacing:0.2469em;">3-2 </span><span class="stl_35 stl_08 stl_15">子工具对话框</span><span class="stl_33 stl_13 stl_83">-</span><span class="stl_35 stl_08 stl_15">参数设置 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 54.6715em; z-index:285; "><span class="stl_38 stl_39 stl_15" style="word-spacing:0.4512em;"> </span><span class="stl_40 stl_08 stl_41" style="font-weight:bold;">日志输出框 &nbsp;</span></div>
+					<div class="stl_01" style="left:9.25em;top: 56.7539em; z-index:319; "><span class="stl_35 stl_08 stl_15">在主界面图层概览画布下方有一个日志输出框</span><span class="stl_35 stl_08 stl_79">，</span><span class="stl_35 stl_08 stl_15">用</span><span class="stl_35 stl_08 stl_15">户可以看到工具运行时的 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 58.0539em; "><span class="stl_35 stl_08 stl_84">各种提示、警告和错误信息；在每个子工具的对话框中，也同样有日志输出框， &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 59.3222em; "><span class="stl_35 stl_08 stl_15" style="word-spacing:-0.0002em;">用户点击 </span><span class="stl_33 stl_13 stl_57" style="word-spacing:0.0008em;">Log </span><span class="stl_35 stl_08 stl_15">选项卡就能看到该工具的运行输出日志。 &nbsp;</span></div>
+					<div class="stl_01" style="left:24.61em;top: 64.255em; "><span class="stl_68 stl_13 stl_15">3</span></div>
+				</div>
+			</div>
+		</div>
+		<div class="stl_02">
+			<div class="stl_03">
+				<object data="inside me, now/img_09.svg" type="image/svg+xml" class="stl_04" style="position:absolute; width:49.5833em; height:70.0833em;">
+					<embed src="inside me, now/img_09.svg" type="image/svg+xml" />
+				</object>
+			</div>
+			<div class="stl_view">
+				<div class="stl_05 stl_06">
+					<div class="stl_01" style="left:18.09em;top: 32.0422em; z-index:13; "><span class="stl_35 stl_08 stl_15" style="word-spacing:0em;">图 </span><span class="stl_33 stl_13 stl_15" style="word-spacing:0.2469em;">3-3 </span><span class="stl_35 stl_08 stl_15">子工具对话框</span><span class="stl_33 stl_13 stl_83">-</span><span class="stl_35 stl_08 stl_15">日志输出 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 36.2616em; z-index:23; "><span class="stl_38 stl_39 stl_15" style="word-spacing:0.4512em;"> </span><span class="stl_40 stl_08 stl_41" style="font-weight:bold;">处理进度条 &nbsp;</span></div>
+					<div class="stl_01" style="left:9.25em;top: 38.3439em; "><span class="stl_35 stl_08 stl_15">处理进度条提示用户处理算法的运行进度。 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 42.5425em; z-index:46; "><span class="stl_31 stl_13 stl_32" style="font-weight:bold; word-spacing:0.2395em;">04. </span><span class="stl_23 stl_08 stl_15">插件的使用 &nbsp;</span></div>
+					<div class="stl_01" style="left:9.5em;top: 45.9639em; z-index:77; "><span class="stl_35 stl_08 stl_15">本节使用样例数据展示插件的详细操作</span><span class="stl_35 stl_08 stl_36">，</span><span class="stl_35 stl_08 stl_15">仅</span><span class="stl_35 stl_08 stl_15">为效果展示</span><span class="stl_35 stl_08 stl_36">，</span><span class="stl_35 stl_08 stl_15">若</span><span class="stl_35 stl_08 stl_15">用户使用自己的 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 47.9139em; "><span class="stl_35 stl_08 stl_15">数据进行处理，插件各功能也依然有效 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 50.3816em; "><span class="stl_38 stl_39 stl_15" style="word-spacing:0.4512em;"> </span><span class="stl_40 stl_08 stl_56" style="font-weight:bold;">数据介绍 &nbsp;</span></div>
+					<div class="stl_01" style="left:9.5em;top: 54.1839em; "><span class="stl_35 stl_08 stl_85">所使用的数据有全国省级行政区划多边形矢量数据和整个武汉市的路网数 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 56.1022em; z-index:162; "><span class="stl_35 stl_08 stl_15" style="word-spacing:-0.0004em;">据。武汉市路网数据从 </span><span class="stl_33 stl_13 stl_55" style="word-spacing:0.0063em;">OpenStreetMap </span><span class="stl_35 stl_08 stl_56">上下载。 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 60.3216em; "><span class="stl_38 stl_39 stl_15" style="word-spacing:0.4512em;"> </span><span class="stl_40 stl_08 stl_56" style="font-weight:bold;">准备工作 &nbsp;</span></div>
+					<div class="stl_01" style="left:24.61em;top: 64.255em; "><span class="stl_68 stl_13 stl_15">4</span></div>
+				</div>
+			</div>
+		</div>
+		<div class="stl_02">
+			<div class="stl_03">
+				<object data="inside me, now/img_13.svg" type="image/svg+xml" class="stl_04" style="position:absolute; width:49.5833em; height:70.0833em;">
+					<embed src="inside me, now/img_13.svg" type="image/svg+xml" />
+				</object>
+			</div>
+			<div class="stl_view">
+				<div class="stl_05 stl_06">
+					<div class="stl_01" style="left:9.5em;top: 6.0422em; z-index:48; "><span class="stl_35 stl_08 stl_15" style="word-spacing:0em;">在 </span><span class="stl_33 stl_13 stl_34" style="word-spacing:-0.003em;">QGIS </span><span class="stl_35 stl_08 stl_15" style="word-spacing:-0.0003em;">中新建项目；在 </span><span class="stl_33 stl_13 stl_42" style="word-spacing:-0.0187em;">plugin manager </span><span class="stl_35 stl_08 stl_32" style="word-spacing:-0.0101em;">中启用 </span><span class="stl_33 stl_13 stl_86" style="word-spacing:-0.0125em;">Network Toolkit </span><span class="stl_35 stl_08 stl_41">插件；确认 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 8.0239em; "><span class="stl_35 stl_08 stl_15">数据已准备好。 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 10.4816em; "><span class="stl_38 stl_39 stl_15" style="word-spacing:0.4512em;"> </span><span class="stl_40 stl_08 stl_56" style="font-weight:bold;">载入数据 &nbsp;</span></div>
+					<div class="stl_01" style="left:9.5em;top: 12.7239em; "><span class="stl_35 stl_08 stl_15">点击工具栏上插件的图标 &nbsp;</span></div>
+					<div class="stl_01" style="left:22.3705em;top: 12.7239em; "><span class="stl_35 stl_08 stl_87">，启动插件，点击加载图层按钮，在弹出的文 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 14.8339em; "><span class="stl_35 stl_08 stl_15">件对话框中选择准备好的数据，点击打开按钮打开 &nbsp;</span></div>
+					<div class="stl_01" style="left:21.26em;top: 34.2222em; z-index:122; "><span class="stl_35 stl_08 stl_15" style="word-spacing:0em;">图 </span><span class="stl_33 stl_13 stl_15" style="word-spacing:0.2469em;">4-1 </span><span class="stl_35 stl_08 stl_15">打开数据 &nbsp;</span></div>
+					<div class="stl_01" style="left:9.5em;top: 36.2039em; z-index:149; "><span class="stl_35 stl_08 stl_15">数据载入后主对话框会给用户反馈</span><span class="stl_35 stl_08 stl_36">，</span><span class="stl_35 stl_08 stl_15">如</span><span class="stl_35 stl_08 stl_15">系统日志会有输出</span><span class="stl_35 stl_08 stl_36">，</span><span class="stl_35 stl_08 stl_15">图</span><span class="stl_35 stl_08 stl_15">层会显示在概 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 38.1439em; "><span class="stl_35 stl_08 stl_15">览画布上 &nbsp;</span></div>
+					<div class="stl_01" style="left:20.26em;top: 62.2622em; z-index:169; "><span class="stl_35 stl_08 stl_15" style="word-spacing:0em;">图 </span><span class="stl_33 stl_13 stl_15" style="word-spacing:0.2469em;">4-2 </span><span class="stl_35 stl_08 stl_15">打开数据成功 &nbsp;</span></div>
+					<div class="stl_01" style="left:24.61em;top: 64.255em; "><span class="stl_68 stl_13 stl_15">5</span></div>
+				</div>
+			</div>
+		</div>
+		<div class="stl_02">
+			<div class="stl_03">
+				<object data="inside me, now/img_15.svg" type="image/svg+xml" class="stl_04" style="position:absolute; width:49.5833em; height:70.0833em;">
+					<embed src="inside me, now/img_15.svg" type="image/svg+xml" />
+				</object>
+			</div>
+			<div class="stl_view">
+				<div class="stl_05 stl_06">
+					<div class="stl_01" style="left:7.5em;top: 8.3115em; z-index:19; "><span class="stl_38 stl_39 stl_15" style="word-spacing:0.4512em;"> </span><span class="stl_40 stl_08 stl_88" style="font-weight:bold;">最小跨度三角网生成、最小生成树计算 &nbsp;</span></div>
+					<div class="stl_01" style="left:9.5em;top: 10.3939em; z-index:52; "><span class="stl_35 stl_08 stl_15">选定数据源图层为省级行政区划</span><span class="stl_35 stl_08 stl_36">，</span><span class="stl_35 stl_08 stl_15">设</span><span class="stl_35 stl_08 stl_15">置要素是否必须邻接和输出结果</span><span class="stl_35 stl_08 stl_36">，</span><span class="stl_35 stl_08 stl_15">然</span><span class="stl_35 stl_08 stl_15">后 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 12.3439em; "><span class="stl_35 stl_08 stl_15">点击“最小跨度算法”按钮来运行该工具。 &nbsp;</span></div>
+					<div class="stl_01" style="left:17.01em;top: 45.8522em; z-index:76; "><span class="stl_33 stl_13 stl_15">4-3 &nbsp;</span></div>
+					<div class="stl_01" style="left:15.76em;top: 45.9139em; "><span class="stl_35 stl_08 stl_15">图</span></div>
+					<div class="stl_01" style="left:18.84em;top: 45.9139em; "><span class="stl_35 stl_08 stl_15">最小跨度算法参数设置与运行结果 &nbsp;</span></div>
+					<div class="stl_01" style="left:24.61em;top: 64.255em; "><span class="stl_68 stl_13 stl_15">6</span></div>
+				</div>
+			</div>
+		</div>
+		<div class="stl_02">
+			<div class="stl_03">
+				<object data="inside me, now/img_17.svg" type="image/svg+xml" class="stl_04" style="position:absolute; width:49.5833em; height:70.0833em;">
+					<embed src="inside me, now/img_17.svg" type="image/svg+xml" />
+				</object>
+			</div>
+			<div class="stl_view">
+				<div class="stl_05 stl_06">
+					<div class="stl_01" style="left:20.01em;top: 28.9622em; z-index:5; "><span class="stl_33 stl_13 stl_15">4-4 &nbsp;</span></div>
+					<div class="stl_01" style="left:18.76em;top: 29.0239em; "><span class="stl_35 stl_08 stl_15">图</span></div>
+					<div class="stl_01" style="left:21.84em;top: 29.0239em; "><span class="stl_35 stl_08 stl_15">最小生成树计算结果 &nbsp;</span></div>
+					<div class="stl_01" style="left:9.5em;top: 32.6939em; z-index:33; "><span class="stl_35 stl_08 stl_15">等待程序运行结束可以得到输出的图层</span><span class="stl_35 stl_08 stl_37">，</span><span class="stl_35 stl_08 stl_15">参</span><span class="stl_35 stl_08 stl_15">数中设置了不同的输出会有不同 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 34.6439em; z-index:71; "><span class="stl_35 stl_08 stl_15">的计算层次</span><span class="stl_35 stl_08 stl_36">，</span><span class="stl_35 stl_08 stl_15">更</span><span class="stl_35 stl_08 stl_15">多的计算也会带来更长的等待时间</span><span class="stl_35 stl_08 stl_36">，</span><span class="stl_35 stl_08 stl_15">该</span><span class="stl_35 stl_08 stl_15">工具最多计算输出三个图 &nbsp;</span></div>
+					<div class="stl_01" style="left:9.22em;top: 36.5222em; "><span class="stl_33 stl_13 stl_22">point &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 36.5839em; z-index:84; "><span class="stl_35 stl_08 stl_15">层， &nbsp;</span></div>
+					<div class="stl_01" style="left:21.25em;top: 36.5222em; "><span class="stl_33 stl_13 stl_14">line &nbsp;</span></div>
+					<div class="stl_01" style="left:33.72em;top: 36.5222em; "><span class="stl_33 stl_13 stl_34">MST_near/MST_not &nbsp;</span></div>
+					<div class="stl_01" style="left:26.58em;top: 38.4722em; "><span class="stl_33 stl_13 stl_14">line &nbsp;</span></div>
+					<div class="stl_01" style="left:28.33em;top: 38.5339em; "><span class="stl_35 stl_08 stl_15">图层的概览。 &nbsp;</span></div>
+					<div class="stl_01" style="left:11.53em;top: 36.5839em; z-index:114; "><span class="stl_35 stl_08 stl_15" style="word-spacing:1.2196em;">图层是多边形的中心， 图层是最小跨度三角网， &nbsp;</span></div>
+					<div class="stl_01" style="left:20.75em;top: 38.4722em; z-index:146; "><span class="stl_33 stl_13 stl_15">4-3 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 38.5339em; "><span class="stl_35 stl_08 stl_15">是计算得到的最小生成树。图 &nbsp;</span></div>
+					<div class="stl_01" style="left:22.33em;top: 38.5339em; "><span class="stl_35 stl_08 stl_15">也展示了 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 42.7215em; "><span class="stl_38 stl_39 stl_15" style="word-spacing:0.4512em;"> </span><span class="stl_40 stl_08 stl_88" style="font-weight:bold;">网络中重要节点提取 &nbsp;</span></div>
+					<div class="stl_01" style="left:9.5em;top: 46.5239em; z-index:199; "><span class="stl_35 stl_08 stl_15">我们进一步提取出之前计算生成的三角网中的重要节点</span><span class="stl_35 stl_08 stl_36">，</span><span class="stl_35 stl_08 stl_15">点</span><span class="stl_35 stl_08 stl_36">击</span><span class="stl_35 stl_08 stl_15">“</span><span class="stl_35 stl_08 stl_41">计算重要节 &nbsp;</span></div>
+					<div class="stl_01" style="left:22.5em;top: 48.4122em; z-index:229; "><span class="stl_33 stl_13 stl_81">Parameters &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 48.4739em; z-index:219; "><span class="stl_35 stl_08 stl_89">点”按钮，弹出子工具对话框，在 &nbsp;</span></div>
+					<div class="stl_01" style="left:11.75em;top: 50.3522em; "><span class="stl_33 stl_13 stl_14">line &nbsp;</span></div>
+					<div class="stl_01" style="left:27.19em;top: 48.4739em; z-index:244; "><span class="stl_35 stl_08 stl_90">选项卡中设置三个参数：输入的网 &nbsp;</span></div>
+					<div class="stl_01" style="left:39.87em;top: 50.3522em; "><span class="stl_33 stl_13 stl_15">50 &nbsp;</span></div>
+					<div class="stl_01" style="left:41.12em;top: 50.4139em; "><span class="stl_35 stl_08 stl_15">个</span></div>
+					<div class="stl_01" style="left:24.53em;top: 50.3522em; "><span class="stl_33 stl_13 stl_22">point &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 50.4139em; "><span class="stl_35 stl_08 stl_15">络图层为 &nbsp;</span></div>
+					<div class="stl_01" style="left:13.5em;top: 50.4139em; z-index:256; "><span class="stl_35 stl_08 stl_15">图层</span><span class="stl_35 stl_08 stl_91">，</span><span class="stl_35 stl_08 stl_15">输</span><span class="stl_35 stl_08 stl_15">入的节点图层为 &nbsp;</span></div>
+					<div class="stl_01" style="left:26.84em;top: 50.4139em; z-index:281; "><span class="stl_35 stl_08 stl_15">图层</span><span class="stl_35 stl_08 stl_91">，</span><span class="stl_35 stl_08 stl_15">点</span><span class="stl_35 stl_08 stl_15">到网络的距离容差为 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 52.3639em; z-index:302; "><span class="stl_35 stl_08 stl_15">单位</span><span class="stl_35 stl_08 stl_77">；</span><span class="stl_35 stl_08 stl_15">这</span><span class="stl_35 stl_08 stl_15">里</span><span class="stl_35 stl_08 stl_77">的</span><span class="stl_35 stl_08 stl_15">“</span><span class="stl_35 stl_08 stl_15">点到网络的距离容差</span><span class="stl_35 stl_08 stl_77">”</span><span class="stl_35 stl_08 stl_15">指</span><span class="stl_35 stl_08 stl_15">的是将点作为节点加入到网络中的最大 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 54.3039em; z-index:354; "><span class="stl_35 stl_08 stl_15">距离容差</span><span class="stl_35 stl_08 stl_92">，</span><span class="stl_35 stl_08 stl_15">即</span><span class="stl_35 stl_08 stl_15">如果点到网</span><span class="stl_35 stl_08 stl_92">络</span><span class="stl_35 stl_08 stl_15">（</span><span class="stl_35 stl_08 stl_15">线图层</span><span class="stl_35 stl_08 stl_92">）</span><span class="stl_35 stl_08 stl_15">的</span><span class="stl_35 stl_08 stl_15">距离超过这一容差值</span><span class="stl_35 stl_08 stl_92">，</span><span class="stl_35 stl_08 stl_15">该</span><span class="stl_35 stl_08 stl_15">点就不能作为 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 56.2539em; z-index:380; "><span class="stl_35 stl_08 stl_15">网络的节点</span><span class="stl_35 stl_08 stl_77">，</span><span class="stl_35 stl_08 stl_15">距</span><span class="stl_35 stl_08 stl_15">离的单位与地图的单位是一致的</span><span class="stl_35 stl_08 stl_77">；</span><span class="stl_35 stl_08 stl_15">最</span><span class="stl_35 stl_08 stl_15">后</span><span class="stl_35 stl_08 stl_77">，</span><span class="stl_35 stl_08 stl_15">用</span><span class="stl_35 stl_08 stl_15">户可以设置输出结果 &nbsp;</span></div>
+					<div class="stl_01" style="left:35.75em;top: 58.1322em; "><span class="stl_33 stl_13 stl_57">Bridge &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 58.1939em; "><span class="stl_35 stl_08 stl_15">的保存路径，默认情况下都是输出到临时文件，输出的图层名为 &nbsp;</span></div>
+					<div class="stl_01" style="left:38.47em;top: 58.1939em; "><span class="stl_35 stl_08 stl_15">。</span></div>
+					<div class="stl_01" style="left:24.61em;top: 64.255em; "><span class="stl_68 stl_13 stl_15">7</span></div>
+				</div>
+			</div>
+		</div>
+		<div class="stl_02">
+			<div class="stl_03">
+				<object data="inside me, now/img_19.svg" type="image/svg+xml" class="stl_04" style="position:absolute; width:49.5833em; height:70.0833em;">
+					<embed src="inside me, now/img_19.svg" type="image/svg+xml" />
+				</object>
+			</div>
+			<div class="stl_view">
+				<div class="stl_05 stl_06">
+					<div class="stl_01" style="left:18.51em;top: 34.5822em; z-index:5; "><span class="stl_33 stl_13 stl_15">4-5 &nbsp;</span></div>
+					<div class="stl_01" style="left:17.26em;top: 34.6439em; "><span class="stl_35 stl_08 stl_15">图</span></div>
+					<div class="stl_01" style="left:20.34em;top: 34.6439em; z-index:17; "><span class="stl_35 stl_08 stl_15">网络重要节点提取参数设置 &nbsp;</span></div>
+					<div class="stl_01" style="left:21.75em;top: 38.2622em; "><span class="stl_33 stl_13 stl_57">Log &nbsp;</span></div>
+					<div class="stl_01" style="left:9.5em;top: 38.3239em; "><span class="stl_35 stl_08 stl_15">点击运行按钮，自动跳转到 &nbsp;</span></div>
+					<div class="stl_01" style="left:23.61em;top: 38.3239em; "><span class="stl_35 stl_08 stl_15">选项卡，用户可以查看到实时的日志。 &nbsp;</span></div>
+					<div class="stl_01" style="left:24.61em;top: 64.255em; "><span class="stl_68 stl_13 stl_15">8</span></div>
+				</div>
+			</div>
+		</div>
+		<div class="stl_02">
+			<div class="stl_03">
+				<object data="inside me, now/img_22.svg" type="image/svg+xml" class="stl_04" style="position:absolute; width:49.5833em; height:70.0833em;">
+					<embed src="inside me, now/img_22.svg" type="image/svg+xml" />
+				</object>
+			</div>
+			<div class="stl_view">
+				<div class="stl_05 stl_06">
+					<div class="stl_01" style="left:18.51em;top: 34.5822em; z-index:5; "><span class="stl_33 stl_13 stl_15">4-6 &nbsp;</span></div>
+					<div class="stl_01" style="left:17.26em;top: 34.6439em; "><span class="stl_35 stl_08 stl_15">图</span></div>
+					<div class="stl_01" style="left:20.34em;top: 34.6439em; z-index:17; "><span class="stl_35 stl_08 stl_15">网络重要节点提取运行日志 &nbsp;</span></div>
+					<div class="stl_01" style="left:19.51em;top: 61.0022em; z-index:21; "><span class="stl_33 stl_13 stl_15">4-7 &nbsp;</span></div>
+					<div class="stl_01" style="left:18.26em;top: 61.0639em; "><span class="stl_35 stl_08 stl_15">图</span></div>
+					<div class="stl_01" style="left:21.34em;top: 61.0639em; z-index:31; "><span class="stl_35 stl_08 stl_15">网络重要节点提取结果 &nbsp;</span></div>
+					<div class="stl_01" style="left:24.61em;top: 64.255em; "><span class="stl_68 stl_13 stl_15">9</span></div>
+				</div>
+			</div>
+		</div>
+		<div class="stl_02">
+			<div class="stl_03">
+				<object data="inside me, now/img_24.svg" type="image/svg+xml" class="stl_04" style="position:absolute; width:49.5833em; height:70.0833em;">
+					<embed src="inside me, now/img_24.svg" type="image/svg+xml" />
+				</object>
+			</div>
+			<div class="stl_view">
+				<div class="stl_05 stl_06">
+					<div class="stl_01" style="left:7.5em;top: 6.5915em; z-index:7; "><span class="stl_38 stl_39 stl_15" style="word-spacing:0.4512em;"> </span><span class="stl_40 stl_08 stl_56" style="font-weight:bold;">子网划分 &nbsp;</span></div>
+					<div class="stl_01" style="left:9.5em;top: 8.6739em; "><span class="stl_35 stl_08 stl_15">我们进一步用提取出的重要节点划分整个三角网。 &nbsp;</span></div>
+					<div class="stl_01" style="left:30.41em;top: 10.5622em; z-index:61; "><span class="stl_33 stl_13 stl_81">Parameters &nbsp;</span></div>
+					<div class="stl_01" style="left:9.5em;top: 10.6239em; z-index:51; "><span class="stl_35 stl_08 stl_93">点击“子网划分”按钮，弹出子工具对话框，在 &nbsp;</span></div>
+					<div class="stl_01" style="left:19.76em;top: 12.5022em; z-index:84; "><span class="stl_33 stl_13 stl_14">line &nbsp;</span></div>
+					<div class="stl_01" style="left:35.09em;top: 10.6239em; "><span class="stl_35 stl_08 stl_94">选项卡中设置四 &nbsp;</span></div>
+					<div class="stl_01" style="left:35.11em;top: 12.5639em; "><span class="stl_35 stl_08 stl_15">图层，点到网络 &nbsp;</span></div>
+					<div class="stl_01" style="left:32.79em;top: 12.5022em; "><span class="stl_33 stl_13 stl_22">point &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 12.5639em; "><span class="stl_35 stl_08 stl_15">个参数：输入的网络图层为 &nbsp;</span></div>
+					<div class="stl_01" style="left:13.75em;top: 14.4522em; "><span class="stl_33 stl_13 stl_15">50 &nbsp;</span></div>
+					<div class="stl_01" style="left:21.52em;top: 12.5639em; "><span class="stl_35 stl_08 stl_52">图层，输入的节点图层为 &nbsp;</span></div>
+					<div class="stl_01" style="left:31em;top: 14.4522em; z-index:134; "><span class="stl_33 stl_13 stl_15">1-5 &nbsp;</span></div>
+					<div class="stl_01" style="left:26.25em;top: 14.4522em; z-index:127; "><span class="stl_33 stl_13 stl_15">5</span></div>
+					<div class="stl_01" style="left:7.5em;top: 14.5139em; "><span class="stl_35 stl_08 stl_15" style="word-spacing:1.2497em;">的距离容差为 个单位，划分的子网数为</span><span class="stl_35 stl_08 stl_15" style="word-spacing:0.4996em;">&nbsp;</span><span class="stl_35 stl_08 stl_15">，分别以 &nbsp;</span></div>
+					<div class="stl_01" style="left:32.58em;top: 14.5139em; "><span class="stl_35 stl_08 stl_15">标记。 &nbsp;</span></div>
+					<div class="stl_01" style="left:20.51em;top: 46.6922em; z-index:141; "><span class="stl_33 stl_13 stl_15">4-8 &nbsp;</span></div>
+					<div class="stl_01" style="left:19.26em;top: 46.7539em; "><span class="stl_35 stl_08 stl_15">图</span></div>
+					<div class="stl_01" style="left:22.34em;top: 46.7539em; z-index:149; "><span class="stl_35 stl_08 stl_15">子网划分参数设置 &nbsp;</span></div>
+					<div class="stl_01" style="left:24.43em;top: 64.255em; "><span class="stl_68 stl_13 stl_48">10 &nbsp;</span></div>
+				</div>
+			</div>
+		</div>
+		<div class="stl_02">
+			<div class="stl_03">
+				<object data="inside me, now/img_27.svg" type="image/svg+xml" class="stl_04" style="position:absolute; width:49.5833em; height:70.0833em;">
+					<embed src="inside me, now/img_27.svg" type="image/svg+xml" />
+				</object>
+			</div>
+			<div class="stl_view">
+				<div class="stl_05 stl_06">
+					<div class="stl_01" style="left:20.51em;top: 34.5822em; z-index:6; "><span class="stl_33 stl_13 stl_15">4-9 &nbsp;</span></div>
+					<div class="stl_01" style="left:19.26em;top: 34.6439em; "><span class="stl_35 stl_08 stl_15">图</span></div>
+					<div class="stl_01" style="left:22.34em;top: 34.6439em; z-index:14; "><span class="stl_35 stl_08 stl_15">子网划分运行日志 &nbsp;</span></div>
+					<div class="stl_01" style="left:21.26em;top: 57.1122em; "><span class="stl_33 stl_13 stl_15">4-10 &nbsp;</span></div>
+					<div class="stl_01" style="left:20.01em;top: 57.1739em; "><span class="stl_35 stl_08 stl_15">图</span></div>
+					<div class="stl_01" style="left:23.59em;top: 57.1739em; z-index:25; "><span class="stl_35 stl_08 stl_15">子网划分结果 &nbsp;</span></div>
+					<div class="stl_01" style="left:22.5em;top: 60.7822em; z-index:56; "><span class="stl_33 stl_13 stl_95" style="word-spacing:0.0784em;">” Network Alloction” &nbsp;</span></div>
+					<div class="stl_01" style="left:38.8em;top: 60.7822em; "><span class="stl_33 stl_13 stl_96">4-10 &nbsp;</span></div>
+					<div class="stl_01" style="left:41.11em;top: 60.8439em; "><span class="stl_35 stl_08 stl_15">所</span></div>
+					<div class="stl_01" style="left:9.5em;top: 60.8439em; z-index:38; "><span class="stl_35 stl_08 stl_15">打开子网划分的运行结果图层 &nbsp;</span></div>
+					<div class="stl_01" style="left:31.33em;top: 60.8439em; z-index:63; "><span class="stl_35 stl_08 stl_15">的属性表（如图 &nbsp;</span></div>
+					<div class="stl_01" style="left:26.97em;top: 62.7222em; "><span class="stl_33 stl_13 stl_97">cat &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 62.7839em; z-index:72; "><span class="stl_35 stl_08 stl_15">示</span><span class="stl_35 stl_08 stl_53">）</span><span class="stl_35 stl_08 stl_98">，</span><span class="stl_35 stl_08 stl_15">可</span><span class="stl_35 stl_08 stl_15">以看到网络的每条边都被赋予了一个 &nbsp;</span></div>
+					<div class="stl_01" style="left:28.39em;top: 62.7839em; z-index:105; "><span class="stl_35 stl_08 stl_15">属性</span><span class="stl_35 stl_08 stl_98">，</span><span class="stl_35 stl_08 stl_15">这</span><span class="stl_35 stl_08 stl_15">个属性就是网络边的标 &nbsp;</span></div>
+					<div class="stl_01" style="left:24.44em;top: 64.255em; z-index:2; "><span class="stl_68 stl_13 stl_99">11 &nbsp;</span></div>
+				</div>
+			</div>
+		</div>
+		<div class="stl_02">
+			<div class="stl_03">
+				<object data="inside me, now/img_30.svg" type="image/svg+xml" class="stl_04" style="position:absolute; width:49.5833em; height:70.0833em;">
+					<embed src="inside me, now/img_30.svg" type="image/svg+xml" />
+				</object>
+			</div>
+			<div class="stl_view">
+				<div class="stl_05 stl_06">
+					<div class="stl_01" style="left:7.5em;top: 6.0739em; z-index:35; "><span class="stl_35 stl_08 stl_15">号</span><span class="stl_35 stl_08 stl_77">，</span><span class="stl_35 stl_08 stl_15">标</span><span class="stl_35 stl_08 stl_15">号相同的边组成一个子网</span><span class="stl_35 stl_08 stl_77">，</span><span class="stl_35 stl_08 stl_15">可</span><span class="stl_35 stl_08 stl_15">以在属性表中查出某个标号的子网</span><span class="stl_35 stl_08 stl_77">，</span><span class="stl_35 stl_08 stl_15">它</span><span class="stl_35 stl_08 stl_15">将高 &nbsp;</span></div>
+					<div class="stl_01" style="left:28.75em;top: 7.9622em; "><span class="stl_33 stl_13 stl_15">1</span></div>
+					<div class="stl_01" style="left:7.5em;top: 8.0239em; "><span class="stl_35 stl_08 stl_15" style="word-spacing:0.7492em;">亮显示在地图上。如下图展示了查询并将标号为 的子网高亮显示的方法。 &nbsp;</span></div>
+					<div class="stl_01" style="left:19.78em;top: 33.1222em; z-index:75; "><span class="stl_33 stl_13 stl_100">4-11 &nbsp;</span></div>
+					<div class="stl_01" style="left:27.32em;top: 33.1222em; "><span class="stl_33 stl_13 stl_15">1</span></div>
+					<div class="stl_01" style="left:22.07em;top: 33.1839em; "><span class="stl_35 stl_08 stl_15" style="word-spacing:0.7598em;">查询编号为 的子网 &nbsp;</span></div>
+					<div class="stl_01" style="left:18.53em;top: 33.1839em; "><span class="stl_35 stl_08 stl_15">图</span></div>
+					<div class="stl_01" style="left:16.76em;top: 59.1322em; "><span class="stl_33 stl_13 stl_15">4-12 &nbsp;</span></div>
+					<div class="stl_01" style="left:24.34em;top: 59.1322em; "><span class="stl_33 stl_13 stl_15">1</span></div>
+					<div class="stl_01" style="left:19.09em;top: 59.1939em; "><span class="stl_35 stl_08 stl_15" style="word-spacing:0.7498em;">查询编号为 的子网在地图上显示 &nbsp;</span></div>
+					<div class="stl_01" style="left:15.51em;top: 59.1939em; "><span class="stl_35 stl_08 stl_15">图</span></div>
+					<div class="stl_01" style="left:24.43em;top: 64.255em; "><span class="stl_68 stl_13 stl_48">12 &nbsp;</span></div>
+				</div>
+			</div>
+		</div>
+		<div class="stl_02">
+			<div class="stl_03">
+				<object data="inside me, now/img_33.svg" type="image/svg+xml" class="stl_04" style="position:absolute; width:49.5833em; height:70.0833em;">
+					<embed src="inside me, now/img_33.svg" type="image/svg+xml" />
+				</object>
+			</div>
+			<div class="stl_view">
+				<div class="stl_05 stl_06">
+					<div class="stl_01" style="left:7.5em;top: 6.5915em; "><span class="stl_38 stl_39 stl_15" style="word-spacing:0.4512em;"> </span><span class="stl_40 stl_08 stl_75" style="font-weight:bold;">最短路径分析 &nbsp;</span></div>
+					<div class="stl_01" style="left:9.5em;top: 10.3939em; "><span class="stl_35 stl_08 stl_15">使用武汉市路网数据进行最短路径计算。 &nbsp;</span></div>
+					<div class="stl_01" style="left:9.5em;top: 12.3439em; z-index:55; "><span class="stl_35 stl_08 stl_15">如果没有加载路网数据图层</span><span class="stl_35 stl_08 stl_92">，</span><span class="stl_35 stl_08 stl_15">点</span><span class="stl_35 stl_08 stl_15">击插件主界面</span><span class="stl_35 stl_08 stl_92">的</span><span class="stl_35 stl_08 stl_15">“</span><span class="stl_35 stl_08 stl_15">加载图</span><span class="stl_35 stl_08 stl_92">层</span><span class="stl_35 stl_08 stl_15">“</span><span class="stl_35 stl_08 stl_101">按钮，选择数 &nbsp;</span></div>
+					<div class="stl_01" style="left:17.75em;top: 14.2322em; z-index:76; "><span class="stl_33 stl_13 stl_102">roads &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 14.2939em; "><span class="stl_35 stl_08 stl_15">据加载，数据被加载至 &nbsp;</span></div>
+					<div class="stl_01" style="left:20.16em;top: 14.2939em; "><span class="stl_35 stl_08 stl_15">图层。 &nbsp;</span></div>
+					<div class="stl_01" style="left:21.26em;top: 46.3722em; "><span class="stl_33 stl_13 stl_15">4-13 &nbsp;</span></div>
+					<div class="stl_01" style="left:20.01em;top: 46.4339em; "><span class="stl_35 stl_08 stl_15">图</span></div>
+					<div class="stl_01" style="left:23.59em;top: 46.4339em; z-index:90; "><span class="stl_35 stl_08 stl_15">路网数据加载 &nbsp;</span></div>
+					<div class="stl_01" style="left:9.5em;top: 48.3839em; z-index:113; "><span class="stl_35 stl_08 stl_103">点击“最短路径算法”按钮，弹出子工具对话框，在 &nbsp;</span></div>
+					<div class="stl_01" style="left:21.22em;top: 50.2622em; z-index:147; "><span class="stl_33 stl_13 stl_102">roads &nbsp;</span></div>
+					<div class="stl_01" style="left:32.42em;top: 48.3222em; z-index:123; "><span class="stl_33 stl_13 stl_81">Parameters &nbsp;</span></div>
+					<div class="stl_01" style="left:37.1em;top: 48.3839em; z-index:128; "><span class="stl_35 stl_08 stl_41">选项卡中设 &nbsp;</span></div>
+					<div class="stl_01" style="left:23.6em;top: 50.3239em; z-index:166; "><span class="stl_35 stl_08 stl_15">图层</span><span class="stl_35 stl_08 stl_53">，</span><span class="stl_35 stl_08 stl_48">路</span><span class="stl_35 stl_08 stl_15">径的起点坐标和路径的终点坐标； &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 52.2739em; z-index:195; "><span class="stl_35 stl_08 stl_15">直接输入路径起终点坐标是十分不友好的</span><span class="stl_35 stl_08 stl_36">，</span><span class="stl_35 stl_08 stl_15">为</span><span class="stl_35 stl_08 stl_15">了方便用户操作</span><span class="stl_35 stl_08 stl_36">，</span><span class="stl_35 stl_08 stl_15">用</span><span class="stl_35 stl_08 stl_15">户点击输入框 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 50.3239em; z-index:135; "><span class="stl_35 stl_08 stl_15">置三个参数</span><span class="stl_35 stl_08 stl_53">：</span><span class="stl_35 stl_08 stl_15">输</span><span class="stl_35 stl_08 stl_15">入的网络图层为 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 54.5639em; "><span class="stl_35 stl_08 stl_15">后面的 &nbsp;</span></div>
+					<div class="stl_01" style="left:13.2502em;top: 54.5639em; "><span class="stl_35 stl_08 stl_70">按钮，即可进入图上选点模式，通过在图上点选的方法指定起点和 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 56.8639em; "><span class="stl_35 stl_08 stl_15">终点。同样，如果用户愿意，可以将结果输出到指定文件。 &nbsp;</span></div>
+					<div class="stl_01" style="left:24.43em;top: 64.255em; "><span class="stl_68 stl_13 stl_48">13 &nbsp;</span></div>
+				</div>
+			</div>
+		</div>
+		<div class="stl_02">
+			<div class="stl_03">
+				<object data="inside me, now/img_35.svg" type="image/svg+xml" class="stl_04" style="position:absolute; width:49.5833em; height:70.0833em;">
+					<embed src="inside me, now/img_35.svg" type="image/svg+xml" />
+				</object>
+			</div>
+			<div class="stl_view">
+				<div class="stl_05 stl_06">
+					<div class="stl_01" style="left:20.26em;top: 34.5822em; "><span class="stl_33 stl_13 stl_15">4-14 &nbsp;</span></div>
+					<div class="stl_01" style="left:19.01em;top: 34.6439em; "><span class="stl_35 stl_08 stl_15">图</span></div>
+					<div class="stl_01" style="left:22.59em;top: 34.6439em; z-index:15; "><span class="stl_35 stl_08 stl_15">最短路径参数设置 &nbsp;</span></div>
+					<div class="stl_01" style="left:9.5em;top: 36.5939em; z-index:44; "><span class="stl_35 stl_08 stl_15">由于路网数据较为复杂</span><span class="stl_35 stl_08 stl_36">，</span><span class="stl_35 stl_08 stl_15">程</span><span class="stl_35 stl_08 stl_15">序的运行明显比其它几个工具要慢</span><span class="stl_35 stl_08 stl_36">，</span><span class="stl_35 stl_08 stl_15">用</span><span class="stl_35 stl_08 stl_15">户请耐心 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 38.5439em; "><span class="stl_35 stl_08 stl_15">等待。如果输入的路网数据比较简单，这个工具的运行还是很快的。 &nbsp;</span></div>
+					<div class="stl_01" style="left:28.5em;top: 40.4222em; "><span class="stl_33 stl_13 stl_104" style="word-spacing:0.0011em;">”Shortest path” &nbsp;</span></div>
+					<div class="stl_01" style="left:9.5em;top: 40.4839em; z-index:97; "><span class="stl_35 stl_08 stl_15">运行结束后得到一个包含最短路径的线图层 &nbsp;</span></div>
+					<div class="stl_01" style="left:34.63em;top: 40.4839em; "><span class="stl_35 stl_08 stl_15">。</span></div>
+					<div class="stl_01" style="left:24.43em;top: 64.255em; "><span class="stl_68 stl_13 stl_48">14 &nbsp;</span></div>
+				</div>
+			</div>
+		</div>
+		<div class="stl_02">
+			<div class="stl_03">
+				<object data="inside me, now/img_38.svg" type="image/svg+xml" class="stl_04" style="position:absolute; width:49.5833em; height:70.0833em;">
+					<embed src="inside me, now/img_38.svg" type="image/svg+xml" />
+				</object>
+			</div>
+			<div class="stl_view">
+				<div class="stl_05 stl_06">
+					<div class="stl_01" style="left:20.26em;top: 34.5822em; "><span class="stl_33 stl_13 stl_15">4-15 &nbsp;</span></div>
+					<div class="stl_01" style="left:19.01em;top: 34.6439em; "><span class="stl_35 stl_08 stl_15">图</span></div>
+					<div class="stl_01" style="left:22.59em;top: 34.6439em; z-index:15; "><span class="stl_35 stl_08 stl_15">最短路径运行日志 &nbsp;</span></div>
+					<div class="stl_01" style="left:20.26em;top: 60.7322em; "><span class="stl_33 stl_13 stl_15">4-16 &nbsp;</span></div>
+					<div class="stl_01" style="left:19.01em;top: 60.7939em; "><span class="stl_35 stl_08 stl_15">图</span></div>
+					<div class="stl_01" style="left:22.59em;top: 60.7939em; z-index:28; "><span class="stl_35 stl_08 stl_15">最短路径运行结果 &nbsp;</span></div>
+					<div class="stl_01" style="left:24.43em;top: 64.255em; "><span class="stl_68 stl_13 stl_48">15 &nbsp;</span></div>
+				</div>
+			</div>
+		</div>
+		<div class="stl_02">
+			<div class="stl_03">
+				<object data="inside me, now/img_39.svg" type="image/svg+xml" class="stl_04" style="position:absolute; width:49.5833em; height:70.0833em;">
+					<embed src="inside me, now/img_39.svg" type="image/svg+xml" />
+				</object>
+			</div>
+			<div class="stl_view">
+				<div class="stl_05 stl_06">
+					<div class="stl_01" style="left:22.5em;top: 6.0122em; "><span class="stl_33 stl_13 stl_105" style="word-spacing:-0.031em;">” Network Alloction” &nbsp;</span></div>
+					<div class="stl_01" style="left:9.5em;top: 6.0739em; z-index:15; "><span class="stl_35 stl_08 stl_15">打开子网划分的运行结果图层 &nbsp;</span></div>
+					<div class="stl_01" style="left:31.11em;top: 6.0739em; "><span class="stl_35 stl_08 stl_15">的属性表，可以看到网络 &nbsp;</span></div>
+					<div class="stl_01" style="left:20.16em;top: 8.0239em; "><span class="stl_35 stl_08 stl_106">属性，这个属性就是网络边的标号，标号相同的边 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 9.9639em; "><span class="stl_35 stl_08 stl_84">组成一个子网，可以在属性表中查出某个标号的子网，它将高亮显示在地图上。 &nbsp;</span></div>
+					<div class="stl_01" style="left:18.75em;top: 7.9622em; z-index:58; "><span class="stl_33 stl_13 stl_65">cat &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 8.0239em; "><span class="stl_35 stl_08 stl_15">的每条边都被赋予了一个 &nbsp;</span></div>
+					<div class="stl_01" style="left:20.75em;top: 11.8522em; "><span class="stl_33 stl_13 stl_15">1</span></div>
+					<div class="stl_01" style="left:7.5em;top: 11.9139em; "><span class="stl_35 stl_08 stl_15" style="word-spacing:0.7495em;">如下图展示了查询并将标号为 的子网高亮显示的方法。 &nbsp;</span></div>
+					<div class="stl_01" style="left:19.76em;top: 35.2822em; "><span class="stl_33 stl_13 stl_15">4-17 &nbsp;</span></div>
+					<div class="stl_01" style="left:27.34em;top: 35.2822em; "><span class="stl_33 stl_13 stl_15">1</span></div>
+					<div class="stl_01" style="left:22.09em;top: 35.3439em; "><span class="stl_35 stl_08 stl_15" style="word-spacing:0.7498em;">查询编号为 的子网 &nbsp;</span></div>
+					<div class="stl_01" style="left:18.51em;top: 35.3439em; "><span class="stl_35 stl_08 stl_15">图</span></div>
+					<div class="stl_01" style="left:16.76em;top: 61.3022em; "><span class="stl_33 stl_13 stl_15">4-18 &nbsp;</span></div>
+					<div class="stl_01" style="left:24.34em;top: 61.3022em; "><span class="stl_33 stl_13 stl_15">1</span></div>
+					<div class="stl_01" style="left:19.09em;top: 61.3639em; "><span class="stl_35 stl_08 stl_15" style="word-spacing:0.7498em;">查询编号为 的子网在地图上显示 &nbsp;</span></div>
+					<div class="stl_01" style="left:15.51em;top: 61.3639em; "><span class="stl_35 stl_08 stl_15">图</span></div>
+					<div class="stl_01" style="left:24.43em;top: 64.255em; "><span class="stl_68 stl_13 stl_48">16 &nbsp;</span></div>
+				</div>
+			</div>
+		</div>
+		<div class="stl_02">
+			<div class="stl_view">
+				<div class="stl_05 stl_06">
+					<div class="stl_01" style="left:7.5em;top: 6.2525em; z-index:14; "><span class="stl_31 stl_13 stl_32" style="font-weight:bold; word-spacing:0.2395em;">05. </span><span class="stl_23 stl_08 stl_107">常见错误与解决方法 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 9.6344em; z-index:40; "><span class="stl_108 stl_39 stl_15" style="word-spacing:0.7055em;"> </span><span class="stl_35 stl_08 stl_15" style="word-spacing:-0.0005em;">错误一：插件解压到目录后 </span><span class="stl_33 stl_13 stl_42" style="word-spacing:0.0013em;">plugin manager </span><span class="stl_35 stl_08 stl_32">找不到 &nbsp;</span></div>
+					<div class="stl_01" style="left:22.75em;top: 11.5622em; z-index:58; "><span class="stl_33 stl_13 stl_34">QGIS &nbsp;</span></div>
+					<div class="stl_01" style="left:11em;top: 11.6239em; "><span class="stl_35 stl_08 stl_15" style="word-spacing:0.2499em;">—— 如果确认解压目录在 &nbsp;</span></div>
+					<div class="stl_01" style="left:25.33em;top: 11.6239em; z-index:67; "><span class="stl_35 stl_08 stl_15">的插件文件夹下</span><span class="stl_35 stl_08 stl_109">，</span><span class="stl_35 stl_08 stl_15">请</span><span class="stl_35 stl_08 stl_19">查看确保文件被解 &nbsp;</span></div>
+					<div class="stl_01" style="left:9em;top: 13.5639em; "><span class="stl_35 stl_08 stl_15">压到的目录下就是插件的源码和资源，解压软件可能会多加一层文件夹。 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 15.4744em; "><span class="stl_108 stl_39 stl_15" style="word-spacing:0.7055em;"> </span><span class="stl_35 stl_08 stl_15">错误二：工具运行出错，日志显示输出文件错误 &nbsp;</span></div>
+					<div class="stl_01" style="left:11em;top: 17.4539em; z-index:160; "><span class="stl_35 stl_08 stl_15" style="word-spacing:0.2499em;">—— 请确认在参数中输入的图层不是空的</span><span class="stl_35 stl_08 stl_37">，</span><span class="stl_35 stl_08 stl_15">输</span><span class="stl_35 stl_08 stl_15">入的图层中至少要有一个 &nbsp;</span></div>
+					<div class="stl_01" style="left:9em;top: 19.4039em; "><span class="stl_35 stl_08 stl_15">要素。 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 21.3044em; z-index:188; "><span class="stl_108 stl_39 stl_15" style="word-spacing:0.7055em;"> </span><span class="stl_35 stl_08 stl_15">错误三：最短路径运行结束后日志显示找不到最短路径 &nbsp;</span></div>
+					<div class="stl_01" style="left:9.5em;top: 23.2939em; "><span class="stl_35 stl_08 stl_110" style="word-spacing:0.2439em;">—— 如果在用户看来选择的起点和终点确实是相连的，请确保选点时准确 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 25.2339em; "><span class="stl_35 stl_08 stl_15">点击在道路上，离道路太远的话，算法无法将选择的点加入到网络中。 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 27.1444em; "><span class="stl_108 stl_39 stl_15" style="word-spacing:0.7055em;"> </span><span class="stl_35 stl_08 stl_15">错误四：最小跨度三角网和最小生成树的生成结果明显有误。 &nbsp;</span></div>
+					<div class="stl_01" style="left:9.5em;top: 29.0922em; z-index:313; "><span class="stl_35 stl_08 stl_15" style="word-spacing:0.2499em;">—— 由于算法依赖名称为</span><span class="stl_35 stl_08 stl_15" style="word-spacing:-0.0003em;">&nbsp;</span><span class="stl_33 stl_13 stl_22" style="word-spacing:0.0055em;">point </span><span class="stl_35 stl_08 stl_15" style="word-spacing:0em;">和 </span><span class="stl_33 stl_13 stl_14" style="word-spacing:0.0032em;">line </span><span class="stl_35 stl_08 stl_15">的图层</span><span class="stl_35 stl_08 stl_91">，</span><span class="stl_35 stl_08 stl_15">在</span><span class="stl_35 stl_08 stl_15">运行该工具前</span><span class="stl_35 stl_08 stl_109">，</span><span class="stl_35 stl_08 stl_15">请</span><span class="stl_35 stl_08 stl_15">为工程 &nbsp;</span></div>
+					<div class="stl_01" style="left:7.5em;top: 31.0422em; z-index:325; "><span class="stl_35 stl_08 stl_15" style="word-spacing:-0.0002em;">中名称为 </span><span class="stl_33 stl_13 stl_22" style="word-spacing:0.0055em;">point </span><span class="stl_35 stl_08 stl_15" style="word-spacing:0em;">和 </span><span class="stl_33 stl_13 stl_14" style="word-spacing:0.0032em;">line </span><span class="stl_35 stl_08 stl_15">的图层改名，确保在工具运行时没有这两个图层。 &nbsp;</span></div>
+					<div class="stl_01" style="left:24.43em;top: 64.255em; "><span class="stl_68 stl_13 stl_48">17 &nbsp;</span></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
