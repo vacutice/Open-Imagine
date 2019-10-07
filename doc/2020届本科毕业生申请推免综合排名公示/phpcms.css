@@ -1,0 +1,509 @@
+@import url( base.css );
+@import url( table.css );
+#main_full {
+	margin: 10px auto 0px; border: 1px solid rgb(185, 223, 249); border-image: none; width: 980px;
+}
+#main_l {
+	width: 638px;
+}
+.sidesearch {
+	height: 30px; line-height: 30px;
+}
+.cribox_top {
+	background: url("images/bg_1.gif") no-repeat 0px 0px; height: 10px; line-height: 10px;
+}
+.cribox_btm {
+	background: url("images/bg_1.gif") no-repeat 0px 0px; height: 10px; line-height: 10px;
+}
+.cribox_bdr {
+	border-width: 0px 6px; border-style: solid; border-color: rgb(229, 243, 254); padding: 0px 5px; border-image: none; height: 200px; overflow: hidden; max-height: 200px;
+}
+.cribox_bdr_1 {
+	border-width: 0px 6px; border-style: solid; border-color: rgb(229, 243, 254); padding: 0px 5px; border-image: none; height: 200px; overflow: hidden; max-height: 200px;
+}
+.cribox_bdr_1 {
+	height: 25px; padding-top: 5px; max-height: 25px;
+}
+.cribox_btm {
+	background-position: 0px -10px; overflow: hidden;
+}
+.cat {
+	margin: 5px auto; overflow: hidden !important; clear: both;
+}
+.cat_index {
+	margin: 5px auto; overflow: hidden !important; clear: both;
+}
+.cat {
+	padding: 0px 5px;
+}
+.cat_title {
+	background: url("images/bg_2.jpg") repeat-x 0px -64px; padding: 0px 10px; border: 1px solid rgb(153, 211, 251); border-image: none; height: 27px; line-height: 27px; overflow: hidden; margin-bottom: 10px;
+}
+.cat_title_1 {
+	background: url("images/bg_2.jpg") repeat-x 0px -64px; padding: 0px 10px; border: 1px solid rgb(153, 211, 251); border-image: none; height: 27px; line-height: 27px; overflow: hidden; margin-bottom: 10px;
+}
+.cat_title_1 {
+	background-position: 0px 24px; border: 0px currentColor; border-image: none;
+}
+.cat_title img {
+	float: right;
+}
+.cat_title_1 img {
+	float: right;
+}
+.cat_title h3 {
+	background: url("images/bg_model.gif") no-repeat -7px 3px; color: rgb(0, 102, 153); padding-left: 1em; font-size: 14px;
+}
+.cat_title_1 h3 {
+	background: url("images/bg_model.gif") no-repeat -7px 3px; color: rgb(0, 102, 153); padding-left: 1em; font-size: 14px;
+}
+.cat_left {
+	padding: 5px 0px; border: 1px solid rgb(153, 211, 251); border-image: none; width: 214px; text-align: center; overflow: hidden; float: left;
+}
+.cat_left p {
+	margin: 0px auto; width: 204px; text-align: left; line-height: 200%; text-indent: 2em;
+}
+.cat_left p a {
+	font-size: 12px;
+}
+.cat_left a img {
+	padding: 1px; border: 1px solid rgb(204, 204, 204); border-image: none;
+}
+.cat_left ul {
+	margin: 0px auto;
+}
+.cat_right {
+	width: 410px; float: right;
+}
+.cat_right a {
+	font-size: 14px;
+}
+#slide {
+	width: 300px;
+}
+#hotnews {
+	width: 312px;
+}
+#hotnews h1 {
+	font-family: "ºÚÌå";
+}
+#hotnews li {
+	line-height: 160%; font-size: 14px;
+}
+.search_tag_top {
+	background: url("images/bg_1.gif") no-repeat 0px -20px; padding-top: 5px;
+}
+.search_tag_top p {
+	background: url("images/bg_search.jpg") no-repeat 10px 0px rgb(228, 243, 252); height: 20px; line-height: 20px; padding-left: 60px;
+}
+#search_tag span {
+	margin: 0px; padding: 5px 10px; cursor: pointer;
+}
+#search_tag span.selected {
+	background: rgb(255, 255, 255); height: 20px; line-height: 20px;
+}
+#content {
+	margin: 0px auto; width: 100%; overflow: hidden;
+}
+#content_head {
+	padding: 10px; text-align: center; border-bottom-color: rgb(185, 223, 249); border-bottom-width: 1px; border-bottom-style: solid;
+}
+#content_head h1 {
+	color: rgb(7, 122, 199); font-family: "ËÎÌå"; font-size: 20px;
+}
+#content_head h2 {
+	line-height: 24px; font-size: 12px; font-weight: normal;
+}
+#digest {
+	margin: 10px; padding: 8px; border: 1px solid rgb(238, 238, 238); border-image: none; line-height: 150%; text-indent: 2em; font-size: 14px; background-color: rgb(254, 254, 255);
+}
+#digest strong {
+	color: rgb(255, 0, 0);
+}
+#endtext {
+	margin: 0px auto;
+}
+#endtext {
+	text-align: left; line-height: 180%; text-indent: 2em; overflow: hidden; clear: both; font-size: 14px; -ms-word-break: break-all; -ms-word-wrap: break-word;
+}
+#endtext p {
+	text-align: left; line-height: 180%; text-indent: 2em; overflow: hidden; clear: both; font-size: 14px; -ms-word-break: break-all; -ms-word-wrap: break-word;
+}
+#endtext li {
+	text-align: left; line-height: 180%; text-indent: 2em; overflow: hidden; clear: both; font-size: 14px; -ms-word-break: break-all; -ms-word-wrap: break-word;
+}
+#content p {
+	text-align: left; line-height: 180%; text-indent: 2em; overflow: hidden; clear: both; font-size: 14px; -ms-word-break: break-all; -ms-word-wrap: break-word;
+}
+#endtext {
+	width: 620px;
+}
+#endtext p {
+	width: 620px;
+}
+#endtext li {
+	width: 620px;
+}
+#endtext .icon {
+	margin: 3px 0px 0px; border: 0px currentColor; border-image: none;
+}
+#endtext img {
+	border: 1px solid rgb(204, 204, 204); border-image: none; overflow: hidden; max-width: 700px;
+}
+#endtext p {
+	margin-top: 10px;
+}
+#endtext a {
+	color: rgb(31, 58, 135); text-decoration: underline;
+}
+#endtext a:hover {
+	color: rgb(188, 41, 49);
+}
+#keyword {
+	margin: 10px 14px; padding: 0px; color: rgb(7, 122, 199); font-size: 14px;
+}
+#keyword a {
+	color: rgb(255, 0, 0); margin-left: 8px;
+}
+#titles {
+	margin: 10px 20px; border: 1px solid rgb(185, 223, 249); border-image: none; width: 596px; overflow: hidden;
+}
+#titles h3 {
+	padding: 0px 8px; border: 1px solid rgb(255, 255, 255); border-image: none; color: rgb(7, 122, 199); line-height: 22px; font-size: 12px; background-color: rgb(228, 243, 252);
+}
+#titles a {
+	list-style: none; width: 280px; line-height: 180%; padding-left: 8px; float: left;
+}
+#pre_and_next {
+	border-top-color: rgb(109, 192, 233); border-bottom-color: rgb(109, 192, 233); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid;
+}
+#pre_and_next li {
+	margin: 8px 10px;
+}
+#commnent_tag {
+	padding: 10px; color: rgb(7, 122, 199); font-size: 12px; font-weight: bold; margin-top: 5px;
+}
+#commnent_tag img {
+	margin-top: -10px; float: right;
+}
+#content h3 {
+	padding: 0px 8px; color: rgb(7, 122, 199); line-height: 24px; font-size: 12px; background-color: rgb(228, 243, 252);
+}
+.box h3 {
+	padding: 0px 8px; color: rgb(7, 122, 199); line-height: 24px; font-size: 12px; background-color: rgb(228, 243, 252);
+}
+#text_1 {
+	padding: 0px 8px; color: rgb(7, 122, 199); line-height: 24px; font-size: 12px; background-color: rgb(228, 243, 252);
+}
+#content h3 a {
+	color: rgb(7, 122, 199); font-size: 12px; font-weight: bold;
+}
+.box h3 a {
+	color: rgb(7, 122, 199); font-size: 12px; font-weight: bold;
+}
+#text_1 a {
+	color: rgb(7, 122, 199); font-size: 12px; font-weight: bold;
+}
+#text_1 {
+	text-align: right; padding-right: 10px;
+}
+.search_list {
+	padding: 6px; margin-bottom: 10px; border-bottom-color: rgb(185, 223, 249); border-bottom-width: 1px; border-bottom-style: dashed;
+}
+.search_list dt {
+	line-height: 24px;
+}
+.search_list dt a:link {
+	color: rgb(0, 0, 204); font-size: 14px; text-decoration: underline;
+}
+.search_list dt a:visited {
+	color: rgb(0, 0, 204); font-size: 14px; text-decoration: underline;
+}
+.search_list dt a:hover {
+	color: rgb(0, 0, 204); font-size: 14px; text-decoration: underline;
+}
+.search_list dt a:active {
+	color: rgb(0, 0, 204); font-size: 14px; text-decoration: underline;
+}
+dd.search_txt {
+	color: rgb(102, 102, 102); line-height: 180%;
+}
+dd.search_attribute {
+	text-align: left; color: rgb(0, 128, 0);
+}
+dd.search_attribute a:link {
+	text-align: left; color: rgb(0, 128, 0);
+}
+dd.search_attribute a:visited {
+	text-align: left; color: rgb(0, 128, 0);
+}
+dd.search_attribute a:hover {
+	text-align: left; color: rgb(0, 128, 0);
+}
+dd.search_attribute a:active {
+	text-align: left; color: rgb(0, 128, 0);
+}
+.search_term {
+	width: 100%;
+}
+.search_term th {
+	text-align: right; padding-right: 10px;
+}
+.search_term td {
+	height: 36px; line-height: 36px;
+}
+.search_res {
+	height: 28px; line-height: 28px; text-indent: 10px; font-size: 14px; font-weight: bold; background-color: rgb(228, 243, 252);
+}
+.c_red {
+	color: rgb(255, 0, 0);
+}
+#search_index {
+	margin: 0px auto; padding: 40px 0px; width: 500px; height: 400px; overflow: hidden; clear: both;
+}
+#search_index li {
+	height: 30px; text-align: center; line-height: 30px;
+}
+#search_index p {
+	margin: 0px auto; padding: 20px 0px; text-align: center;
+}
+#search_index li span {
+	padding: 0px 8px; color: rgb(0, 0, 204); font-size: 14px;
+}
+#search_index a:link {
+	color: rgb(0, 0, 204); text-decoration: underline;
+}
+#search_index a:visited {
+	color: rgb(0, 0, 204); text-decoration: underline;
+}
+#search_index a:hover {
+	color: rgb(0, 0, 204); text-decoration: underline;
+}
+#search_index a:active {
+	color: rgb(0, 0, 204); text-decoration: underline;
+}
+#search_index a.now:link {
+	color: rgb(69, 69, 69); font-weight: bold; text-decoration: none;
+}
+#search_index a.now:visited {
+	color: rgb(69, 69, 69); font-weight: bold; text-decoration: none;
+}
+#search_index a.now:hover {
+	color: rgb(69, 69, 69); font-weight: bold; text-decoration: none;
+}
+#search_index a.now:active {
+	color: rgb(69, 69, 69); font-weight: bold; text-decoration: none;
+}
+.search_box {
+	margin: 20px 10px;
+}
+#ArtFrom {
+	margin-bottom: 0px; border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none;
+}
+#ArticleCnt {
+	width: 100%; text-align: center; margin-top: 10px;
+}
+#lantern {
+	background: rgb(244, 244, 244); margin: 10px auto; width: 610px; overflow: hidden;
+}
+#tool {
+	background: url("images/pic_tool.gif") repeat-x; height: 33px; border-bottom-color: rgb(255, 255, 255); border-bottom-width: 1px; border-bottom-style: solid;
+}
+#tool .f_l {
+	margin: 6px 0px 0px 12px; font-size: 12px;
+}
+#tool .f_r {
+	margin: 6px 9px 0px 0px;
+}
+#pagejump {
+	margin-left: 5px;
+}
+#bimg {
+	margin: 7px 5px; width: 600px; text-align: center; overflow: hidden;
+}
+#simg {
+	background: url("images/tool_img.gif") repeat-x rgb(233, 233, 233); height: 75px; padding-top: 8px;
+}
+#simg .p {
+	width: 22px; text-align: right; text-indent: 0px; float: left;
+}
+#simg .n {
+	width: 22px; text-align: left; text-indent: 0px; float: right;
+}
+#simg img.s {
+	opacity: 1; -moz-opacity: 1;
+}
+#simg img {
+	text-indent: 0px;
+}
+#sImage {
+	width: 510px; float: left;
+}
+#sImage div {
+	background: rgb(236, 236, 236); margin: 0px 0px 0px 12px; border: 1px solid rgb(199, 199, 199); border-image: none; width: 70px; height: 58px; text-align: center; overflow: hidden; float: left; display: inline;
+}
+#sImage p {
+	background: rgb(236, 236, 236); margin: 0px 0px 0px 12px; border: 1px solid rgb(199, 199, 199); border-image: none; width: 70px; height: 58px; text-align: center; overflow: hidden; float: left; display: inline;
+}
+#sImage img {
+	height: 58px; text-indent: 0px; opacity: 0.6; -moz-opacity: 0.6;
+}
+#Explain {
+	margin: 0px auto; padding: 5px 15px 0px; line-height: 18px; font-size: 12px;
+}
+#Explain p {
+	margin: 0px; padding: 0px; font-size: 12px;
+}
+.ss {
+	opacity: 0.3; -moz-opacity: 0.3;
+}
+#butStop {
+	display: block;
+}
+#ArtPLinkTop {
+	display: block;
+}
+#ArtPLink {
+	display: block;
+}
+#cntLeft #Article #atPage {
+	display: block;
+}
+#hdcnt p {
+	text-indent: 2em;
+}
+#hdcnt {
+	margin-bottom: 40px;
+}
+#ArticleCnt {
+	text-indent: 0px;
+}
+#ArtCnt {
+	text-indent: 0px;
+}
+.down_info {
+	background: rgb(228, 243, 252); margin: 10px; width: 610px;
+}
+.down_info caption {
+	padding: 8px; text-align: left; color: rgb(7, 122, 199); font-size: 14px; font-weight: bold;
+}
+.down_info th {
+	background: rgb(255, 255, 255); width: 110px; text-align: right; font-weight: normal;
+}
+.down_info td {
+	background: rgb(255, 255, 255); padding: 8px;
+}
+#down_intro {
+	margin: 5px; line-height: 1.8em; text-indent: 2em; font-size: 14px;
+}
+.down_list {
+	padding: 5px; margin-bottom: 8px; border-bottom-color: rgb(185, 223, 249); border-bottom-width: 1px; border-bottom-style: dashed;
+}
+.down_list dt {
+	color: rgb(7, 122, 199); line-height: 30px; font-size: 14px; font-weight: bold;
+}
+dd.down_txt {
+	color: rgb(120, 120, 120); line-height: 180%; text-indent: 2em;
+}
+dd.down_attribute {
+	padding: 10px 0px 0px;
+}
+.down_info {
+	background: rgb(228, 243, 252); margin: 10px; width: 610px;
+}
+.down_info caption {
+	padding: 8px; text-align: left; color: rgb(7, 122, 199); font-size: 14px; font-weight: bold;
+}
+.down_info th {
+	background: rgb(255, 255, 255); width: 110px; text-align: right; font-weight: normal;
+}
+.down_info td {
+	background: rgb(255, 255, 255); padding: 8px;
+}
+#down_intro {
+	text-indent: 0px;
+}
+#down_address {
+	padding: 10px; line-height: 24px;
+}
+#down_address a {
+	width: 300px; display: block;
+}
+.cat_info {
+	margin: 10px 4px 0px 0px; width: 315px; float: left;
+}
+#info_nav {
+	margin-top: -5px;
+}
+#info_nav dl {
+	margin: 5px 5px 0px; border-bottom-color: rgb(220, 220, 220); border-bottom-width: 1px; border-bottom-style: dashed;
+}
+#info_nav dt {
+	color: rgb(0, 102, 204); font-size: 14px; font-weight: bold;
+}
+#info_nav dd a {
+	height: 28px; color: rgb(0, 102, 204); line-height: 28px; margin-right: 6px;
+}
+#area {
+	padding: 8px;
+}
+#area a {
+	margin: 0px 6px; line-height: 180%;
+}
+.vote_submit p {
+	border: 1px solid rgb(255, 255, 255); border-image: none;
+}
+#tag_list {
+	
+}
+#tag_list li {
+	width: 139px; color: rgb(204, 204, 204); line-height: 30px; text-indent: 8px; font-family: arial; font-size: 11px; float: left; display: block;
+}
+#tag_list li a {
+	font-size: 14px;
+}
+#vote_info {
+	padding: 10px; color: rgb(69, 69, 69); line-height: 180%; text-indent: 2em; font-size: 14px; border-bottom-color: rgb(185, 223, 249); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+#vote_list {
+	padding: 10px;
+}
+#vote_list dl {
+	width: 100%; overflow: hidden; margin-bottom: 5px; border-bottom-color: rgb(185, 223, 249); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+#vote_list dt {
+	height: 30px; color: rgb(7, 122, 199); line-height: 30px; text-indent: 1em; font-size: 12px; font-weight: bold;
+}
+#vote_list dd {
+	height: 24px; color: rgb(7, 122, 199); line-height: 24px; padding-right: 10px;
+}
+#vote_list dl.inline {
+	
+}
+#vote_list dl.inline dd {
+	float: left; display: block;
+}
+#vote_list dl.pic_vote {
+	
+}
+#vote_list dl.pic_vote dd {
+	width: 94px; height: 90px; text-align: center; line-height: 18px; overflow: hidden; margin-top: 10px; float: left; display: block;
+}
+#vote_list dl.pic_vote dd img {
+	padding: 1px; border: 1px solid rgb(204, 204, 204); border-image: none;
+}
+.block_add {
+	padding: 5px; border: 1px solid rgb(255, 153, 0); border-image: none; position: absolute; z-index: 100; cursor: pointer; background-color: yellow;
+}
+#sitemap {
+	margin: 10px;
+}
+#sitemap h3 {
+	line-height: 30px; font-size: 14px; margin-top: 10px;
+}
+#sitemap p {
+	line-height: 28px; padding-left: 20px; border-bottom-color: rgb(185, 223, 249); border-bottom-width: 1px; border-bottom-style: dashed;
+}
+#sitemap p a {
+	margin-right: 40px;
+}

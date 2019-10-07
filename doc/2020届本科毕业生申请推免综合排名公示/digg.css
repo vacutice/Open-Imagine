@@ -1,0 +1,67 @@
+@import url( base.css );
+.digg_list {
+	padding: 6px; margin-bottom: 10px; border-bottom-color: rgb(185, 223, 249); border-bottom-width: 1px; border-bottom-style: dashed;
+}
+.digg_list dt {
+	width: 560px; color: rgb(7, 122, 199); line-height: 24px; font-size: 12px; font-weight: bold; float: right;
+}
+dd.digg_pic {
+	background: url("images/bg_digg.png") no-repeat 0px 0px; margin: 8px 10px 0px 0px; width: 53px; text-align: center; color: rgb(255, 153, 0); line-height: 24px; padding-top: 8px; text-decoration: none; float: left; display: block;
+}
+dd.digg_txt {
+	width: 560px; height: 50px; color: rgb(102, 102, 102); line-height: 180%; margin-left: 20px; min-height: 50px;
+}
+dd.digg_attribute {
+	text-align: right;
+}
+#digg {
+	margin: 0px auto 10px; width: 140px; overflow: hidden;
+}
+dd.digg_pic {
+	background: url("images/bg_digg.png") no-repeat 0px 0px; width: 53px; text-align: center; color: rgb(255, 153, 0); line-height: 24px; padding-top: 8px; text-decoration: none; float: left; display: block;
+}
+#digg span {
+	background: url("images/bg_digg.png") no-repeat 0px 0px; width: 53px; text-align: center; color: rgb(255, 153, 0); line-height: 24px; padding-top: 8px; text-decoration: none; float: left; display: block;
+}
+#digg span.cai {
+	background: url("images/bg_digg.png") no-repeat 0px 0px; width: 53px; text-align: center; color: rgb(255, 153, 0); line-height: 24px; padding-top: 8px; text-decoration: none; float: left; display: block;
+}
+dd.digg_pic span strong {
+	color: rgb(255, 255, 255); font-family: Arial; font-size: 14px;
+}
+#digg span strong {
+	color: rgb(255, 255, 255); font-family: Arial; font-size: 14px;
+}
+dd.digg_pic samp {
+	cursor: pointer;
+}
+#digg span.cai {
+	background-position: -62px 0px; width: 53px; color: rgb(0, 153, 255); float: right;
+}
+.commentbox {
+	border: 1px solid rgb(189, 227, 253); border-image: none; margin-top: 10px;
+}
+.commenthead {
+	background: rgb(237, 248, 254); padding: 0px 6px; border: 1px solid rgb(255, 255, 255); border-image: none; height: 26px; color: rgb(0, 153, 204); line-height: 26px;
+}
+.commenthead img {
+	margin: 7px 10px 0px 0px; float: right;
+}
+.commenttext {
+	padding: 10px;
+}
+.commenttext p {
+	padding: 5px; text-indent: 2em; font-size: 14px;
+}
+.commentfunction {
+	border-width: 1px; border-style: dotted solid solid; border-color: rgb(189, 227, 253) rgb(255, 255, 255) rgb(255, 255, 255); border-image: none; text-align: right; color: rgb(0, 153, 204); line-height: 24px; padding-right: 15px;
+}
+.reply {
+	border-width: 1px 1px 1px 5px; border-style: solid; border-color: rgb(189, 227, 253); margin: 10px auto; padding: 5px 10px; border-image: none; color: rgb(69, 69, 69); line-height: 180%; text-indent: 0px; font-size: 12px;
+}
+.reply p {
+	margin: 2px auto; line-height: 150%; text-indent: 2em; font-size: 12px;
+}
+.floatdiv {
+	background: rgb(255, 102, 0); margin: -150px 0px 0px -200px; border: 1px solid rgb(220, 220, 220); border-image: none; left: 50%; top: 50%; width: 400px; height: 300px; display: none; position: absolute;
+}
