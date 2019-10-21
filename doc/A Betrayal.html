@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html class="enhanced" lang="en">
+<head>
+	<meta charset="utf-8">
+<title></title>
+<style>
+body {
+	line-height: 1;
+}
+main, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+*, *::before, *::after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+body {
+	color: #b3b3b3;
+	background: #000;
+}
+html {
+	font: 100%/1.25 "Tiempos Text",serif;
+}
+header[role=banner] {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	height: 40px;
+	z-index: 1000;
+}
+input, textarea {
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	padding: 0;
+}
+.story article header {
+	display: inline-block;
+	position: relative;
+	margin-bottom: 1em;
+	width: 100%;
+}
+/* @media screen and (min-width:37.5em) */
+.story article header {
+	margin-bottom: 2em;
+}
+.wrapper, .content-wrapper {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+.content-wrapper {
+	max-width: 1440px;
+}
+/* @media screen and (min-width:0px) */
+.content-wrapper {
+	margin: 0 3.3863752194%;
+}
+/* @media screen and (min-width:37.5em) */
+.content-wrapper {
+	margin: 0 4.3619439333%;
+}
+/* @media screen and (min-width:48em) */
+.content-wrapper {
+	margin: 0 7.8886310905%;
+}
+/* @media screen and (min-width:60em) */
+.content-wrapper {
+	margin: 0 5.49273021%;
+}
+/* @media screen and (min-width:37.5em) */
+.story article .content, .story article .end-matter {
+	width: 65.05%;
+	margin-left: 17.47%;
+}
+/* @media screen and (min-width:48em) */
+.story article .content, .story article .end-matter {
+	width: 74.1%;
+	margin-left: 12.94%;
+}
+/* @media screen and (min-width:60em) */
+.story article .content, .story article .end-matter {
+	width: 65.88%;
+	margin-left: 17.05%;
+}
+.email-signup {
+	margin: 0 3.7142857143% 3em;
+	padding-top: 0px;
+}
+/* @media screen and (min-width:37.5em) */
+.email-signup {
+	margin-left: 0px;
+	margin-right: 0px;
+	width: 100%;
+}
+/* @media screen and (min-width:60em) */
+.email-signup {
+	width: 74.1%;
+	margin-left: 12.94%;
+}
+#comments {
+	margin: 0 3.7142857143% 4em;
+}
+/* @media screen and (min-width:37.5em) */
+#comments {
+	margin-left: 0px;
+	margin-right: 0px;
+	width: 100%;
+}
+#disqus_thread {
+	color: #b3b3b3;
+}
+li, p {
+	font-size: 1rem;
+	line-height: 1.5;
+	padding-bottom: 1em;
+}
+/* @media screen and (min-width:37.5em) */
+li, p {
+	line-height: 1.65;
+}
+a:link, a:visited {
+	color: #7a2613;
+}
+.email-signup small {
+	font-size: 0.62rem;
+	font-family: Graphik,sans-serif;
+	line-height: 1.3;
+	color: #fff;
+	display: block;
+	text-align: center;
+}
+.story article .content a {
+	text-decoration: none;
+	color: #b3b3b3;
+	border-bottom: 2px solid #7a2613;
+}
+.story article .content .email-signup small a, .story article .end-matter .email-signup small a {
+	color: #fff;
+	border: 0;
+	text-decoration: underline;
+}
+.email-signup input[type=email], .email-signup input[type=text] {
+	font-family: tiempos text,serif;
+	border: 1px solid #fff;
+}
+.email-signup #email-signup-input-email, .email-signup #email-signup-input-subscribe {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 0.5em;
+	padding: .5rem;
+	font-size: 1rem;
+	text-align: center;
+	border-radius: .2em;
+}
+.email-signup #email-signup-input-subscribe {
+	font-family: tiempos text,serif;
+	font-weight: 700;
+	-webkit-font-smoothing: antialiased;
+	color: #fff;
+	border: 0;
+	background-color: #7a2613;
+	cursor: pointer;
+	margin-bottom: 1em;
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	transition: all .25s ease;
+}
+.email-signup label {
+	text-align: center;
+	line-height: 1.5;
+	font-family: Graphik,sans-serif;
+	font-weight: 700;
+}
+/* @media screen and (min-width:37.5em) */
+.email-signup label {
+	line-height: 1.65;
+}
+.email-signup label[for=email-signup-input-email] {
+	display: block;
+	font-size: 1rem;
+	font-style: normal;
+	color: #b3b3b3;
+	margin-bottom: 1.25rem;
+}
+/* @media screen and (min-width:37.5em) */
+.email-signup label[for=email-signup-input-email] {
+	font-size: 1.12rem;
+}
+figure {
+	margin-bottom: 1em;
+}
+.story article .content figure {
+	margin-top: 1.25em;
+	margin-bottom: 1.75em;
+}
+/* @media screen and (min-width:37.5em) */
+.story article .content figure.large {
+	width: 153.71%;
+	margin-left: -26.85%;
+}
+/* @media screen and (min-width:48em) */
+.story article .content figure.large {
+	width: 134.94%;
+	margin-left: -17.47%;
+}
+/* @media screen and (min-width:60em) */
+.story article .content figure.large {
+	width: 151.79%;
+	margin-left: -25.89%;
+}
+.story article .content figure.large.opening-video {
+	margin-top: 0px;
+}
+/* @media screen and (min-width:48em) */
+.story article .content figure.large.opening-video {
+	margin-bottom: 12.63%;
+}
+/* @media screen and (min-width:60em) */
+.story article .content figure.large.opening-video {
+	margin-bottom: 9.36%;
+}
+.story article .content .opening {
+	color: #ccc;
+}
+/* @media screen and (min-width:37.5em) */
+.story article .content p.opening {
+	font-size: 1.31rem;
+	line-height: 1.5;
+}
+.story article .content aside.promotion {
+	margin-top: 0.5em;
+	float: right;
+}
+/* @media screen and (min-width:0px) */
+.story article .content aside.promotion {
+	width: 46.28%;
+	margin-left: 7.42%;
+}
+/* @media screen and (min-width:37.5em) */
+.story article .content aside.promotion {
+	width: 46.28%;
+	margin-left: 7.42%;
+}
+/* @media screen and (min-width:48em) */
+.story article .content aside.promotion {
+	width: 47.58%;
+	margin-left: 4.83%;
+}
+/* @media screen and (min-width:60em) */
+.story article .content aside.promotion {
+	width: 48.2%;
+	margin-left: 3.58%;
+}
+/* @media screen and (min-width:37.5em) */
+.story article .content figure.medium {
+	width: 114.85%;
+	margin-left: -7.42%;
+}
+/* @media screen and (min-width:48em) */
+.story article .content figure.medium {
+	width: 109.66%;
+	margin-left: -4.83%;
+}
+/* @media screen and (min-width:60em) */
+.story article .content figure.medium {
+	width: 125.89%;
+	margin-left: -12.94%;
+}
+.story article .content hr {
+	display: inline-block;
+	border: 0;
+	height: 0.25em;
+	background: #fff;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	width: 46.28%;
+	margin-left: 26.85%;
+}
+.story article .content hr {
+	background: #7a2613;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.story article .content figure.full {
+	width: auto;
+	margin-left: calc(-50vw + 50%);
+	margin-right: calc(-50vw + 50%);
+}
+.story article .content figure.inset {
+	margin-top: 0.5em;
+	float: right;
+}
+/* @media screen and (min-width:0px) */
+.story article .content figure.inset {
+	width: 46.28%;
+	margin-left: 7.42%;
+}
+/* @media screen and (min-width:48em) */
+.story article .content figure.inset {
+	width: 47.58%;
+	margin-left: 4.83%;
+}
+/* @media screen and (min-width:60em) */
+.story article .content figure.inset {
+	width: 48.2%;
+	margin-left: 3.58%;
+}
+.story article .content .editors-note {
+	border: 4px solid #7a2613;
+	margin: 3em 0;
+	padding: 0 1em 1em;
+}
+/* @media screen and (min-width:48em) */
+.story article .content .editors-note {
+	padding: 0 2em 2em;
+}
+.story article .content .author-bio {
+	margin-top: 2em;
+	font-size: 0.81rem;
+	color: #fff;
+	font-style: italic;
+}
+.story article .content .author-bio {
+	color: #b3b3b3;
+}
+.story article .content .author-bio a.contact {
+	background-color: #333;
+	border: none;
+	border-radius: .25em;
+	display: inline-block;
+	font-family: Graphik,sans-serif;
+	font-size: 0.81rem;
+	font-style: normal;
+	padding: .25em .5em;
+}
+.story article .content .author-bio img {
+	float: left;
+	margin-top: 0.25em;
+	margin-right: 10px;
+	border-radius: 100%;
+}
+/* @media screen and (min-width:0px) */
+.story article .content .author-bio img {
+	width: 19.42%;
+	height: 19.42%;
+}
+/* @media screen and (min-width:48em) */
+.story article .content .author-bio img {
+	width: 12.63%;
+	height: 12.63%;
+}
+/* @media screen and (min-width:60em) */
+.story article .content .author-bio img {
+	width: 9.36%;
+	height: 9.36%;
+}
+h2, h3, h4, h5, h6 {
+	font-family: Graphik,sans-serif;
+}
+.story article .content h3 {
+	font-size: 1rem;
+	margin-top: 1.5em;
+	margin-bottom: 0.75em;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+}
+.story article .content .editors-note h3 {
+	color: #fff;
+}
+.caption, figcaption {
+	color: #d9d9d9;
+	font-size: 0.81rem;
+	font-style: italic;
+}
+.story article .content figure figcaption {
+	font-size: 0.81rem;
+	line-height: 1.5;
+	margin-top: 0.75em;
+}
+.story article .content figure .credit {
+	color: #fff;
+}
+.story article .content figure .caption, .story article .content figure figcaption, .story article .content figure .credit {
+	color: #8c8c8c;
+}
+.story article .content figure img, .story article .content figure video {
+	display: block;
+	width: 100%;
+}
+em, i {
+	font-style: italic;
+}
+.story article .content .lead-in {
+	font-family: Graphik,sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.story article .content .lead-in {
+	color: #fff;
+}
+/* @media screen and (min-width:60em) */
+.story article .content figure.medium figcaption {
+	width: 79.43%;
+	margin-left: 10.28%;
+}
+/* @media screen and (min-width:60em) */
+.story article .content figure.large figcaption {
+	width: 65.88%;
+	margin-left: 17.05%;
+}
+.story article .content figure.full figcaption {
+	margin-left: 3.71%;
+	margin-right: 3.71%;
+}
+/* @media screen and (min-width:37.5em) */
+.story article .content figure.full figcaption {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.story article .content aside .group {
+	margin-bottom: 1em;
+}
+.story article .content aside h3 {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	font-weight: 700;
+	line-height: 1.5;
+}
+.story article .content aside.promotion h3 {
+	color: #fff;
+}
+.story article .content aside p {
+	font-size: 0.81rem;
+	line-height: 1.65;
+}
+.promotion .email-signup {
+	margin: 0;
+	padding-top: 0px;
+	width: 100%;
+}
+.promotion .email-signup form {
+	width: 100%;
+}
+.promotion .email-signup small {
+	text-align: left;
+}
+.promotion .email-signup label[for=email-signup-input-email] {
+	display: none;
+}
+/* @media screen and (min-width:37.5em) */
+.story article .content .dropcap {
+	font-family: Graphik,sans-serif;
+	font-weight: 700;
+	font-size: 3.43rem;
+	line-height: 1;
+	text-align: center;
+	float: left;
+	display: block;
+	position: relative;
+	width: 1em;
+	margin-right: 0.15em;
+	background-color: #b3b3b3;
+	color: #000;
+	padding-top: 0.06em;
+}
+.story article .content .dropcap {
+	background-color: #fff;
+}
+.aspect-2-3, .aspect-1-1, .aspect-16-9, .aspect-3-2, .aspect-3-4, .aspect-4-3, .aspect-9-16 {
+	display: block;
+	position: relative;
+}
+.aspect-16-9 {
+	padding-top: 56.25%;
+}
+.aspect-2-3 > *, .aspect-1-1 > *, .aspect-16-9 > *, .aspect-3-2 > *, .aspect-3-4 > *, .aspect-4-3 > *, .aspect-9-16 > * {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+}
+.title-wrapper {
+	max-width: 1440px;
+}
+/* @media screen and (min-width:0px) */
+.title-wrapper {
+	margin: 0 3.3863752194%;
+}
+/* @media screen and (min-width:37.5em) */
+.title-wrapper {
+	margin: 0 4.3619439333%;
+}
+/* @media screen and (min-width:48em) */
+.title-wrapper {
+	margin: 0 7.8886310905%;
+}
+/* @media screen and (min-width:60em) */
+.title-wrapper {
+	margin: 0 5.49273021%;
+}
+.story article header .titles {
+	padding-top: 0.5em;
+	text-align: center;
+}
+/* @media screen and (min-width:37.5em) */
+.story article header .titles {
+	padding-top: 2em;
+}
+h1 {
+	font-family: tiempos text,serif;
+}
+h1 {
+	font-size: 3.43rem;
+	line-height: 1;
+	font-weight: 700;
+}
+/* @media screen and (min-width:37.5em) */
+.story article header .titles .byline, .story article header .titles .co-publish, .story article header .titles .dateline, .story article header .titles h2, .story article header .titles h3 {
+	width: 65.05%;
+	margin-left: 17.47%;
+}
+/* @media screen and (min-width:48em) */
+.story article header .titles .byline, .story article header .titles .co-publish, .story article header .titles .dateline, .story article header .titles h2, .story article header .titles h3 {
+	width: 74.1%;
+	margin-left: 12.94%;
+}
+/* @media screen and (min-width:60em) */
+.story article header .titles .byline, .story article header .titles .co-publish, .story article header .titles .dateline, .story article header .titles h1, .story article header .titles h2, .story article header .titles h3 {
+	width: 65.88%;
+	margin-left: 17.05%;
+}
+.story article header .titles h1 {
+	font-size: 2.12rem;
+	margin-bottom: 0.25em;
+}
+/* @media screen and (min-width:37.5em) */
+.story article header .titles h1 {
+	font-size: 3.43rem;
+}
+.story article header .titles h1 {
+	width: auto;
+	margin-left: calc(-50vw + 50%);
+	margin-right: calc(-50vw + 50%);
+	color: #fff;
+	font-family: Graphik,sans-serif;
+	font-size: 2.12rem;
+	letter-spacing: 0.02em;
+	margin-top: 2em;
+	text-transform: uppercase;
+}
+/* @media screen and (min-width:37.5em) */
+.story article header .titles h1 {
+	font-size: 4.25rem;
+	margin-top: 1.5em;
+}
+/* @media screen and (min-width:48em) */
+.story article header .titles h1 {
+	font-size: 5.56rem;
+}
+h2 {
+	font-size: 1.62rem;
+	line-height: 1.25;
+	font-weight: 700;
+}
+.story article header .titles h2 {
+	font-size: 1.31rem;
+	font-weight: 400;
+	margin-bottom: 0.5em;
+}
+/* @media screen and (min-width:37.5em) */
+.story article header .titles h2 {
+	font-size: 1.62rem;
+}
+.story article header .titles .dateline {
+	margin-bottom: 1.5em;
+}
+.story article header .titles .co-publish {
+	margin-bottom: 1.5em;
+	font-style: italic;
+	text-decoration: none;
+}
+.story article header .titles .byline, .story article header .titles .co-publish, .story article header .titles .dateline {
+	line-height: 1.3;
+}
+.story article header .titles h2, .story article header .titles .co-publish, .story article header .titles .dateline, .story article header .titles .byline {
+	color: #fff;
+}
+.story article header .titles .byline, .story article header .titles .co-publish, .story article header .titles .dateline {
+	display: block;
+}
+.story article header .titles .byline {
+	margin-bottom: 0.5em;
+}
+header[role=banner] > h1 {
+	display: block;
+	width: 150px;
+	height: inherit;
+	float: left;
+	margin-left: 0.25em;
+}
+/* @media screen and (min-width:37.5em) */
+header[role=banner] > h1 {
+	margin-left: 0.33em;
+}
+header[role=banner] nav {
+	position: fixed;
+	top: 0px;
+	right: 0.5em;
+	font-family: Graphik,sans-serif;
+	font-size: 0.87em;
+	-webkit-font-smoothing: antialiased;
+}
+ul {
+	list-style-type: disc;
+}
+header[role=banner] nav ul {
+	list-style: none;
+}
+header[role=banner] nav .social-links {
+	display: inline-block;
+	position: relative;
+	top: 0.5rem;
+}
+header[role=banner] nav .donate-links {
+	float: right;
+	margin-left: 0.25rem;
+}
+li {
+	padding-bottom: 0.5em;
+}
+header[role=banner] nav ul li {
+	padding-bottom: inherit;
+}
+header[role=banner] nav .donate-links li {
+	display: inline-block;
+}
+nav .twitter a {
+	background-image: url("../images/nav-sprites-light.min.svg?562092");
+}
+nav .facebook a {
+	background-image: url("../images/nav-sprites-light.min.svg?562092");
+}
+header[role=banner] nav ul li a {
+	color: #b3b3b3;
+}
+header[role=banner] nav .donate-links li a {
+	display: inline-block;
+	cursor: pointer;
+	padding: .375rem .5rem .3rem;
+	font-family: tiempos text,serif;
+	font-size: 1rem;
+	font-weight: 700;
+	text-decoration: none;
+	color: #fff;
+	border-radius: 0 0 .2rem .2rem;
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	transition: all .25s ease;
+}
+header[role=banner] nav .donate-links li a:link, header[role=banner] nav .donate-links li a:visited {
+	background-color: #be3b3b;
+}
+header[role=banner] nav .social-links li {
+	display: inline-block;
+}
+nav .twitter a {
+	background: url(../images/nav-sprites-dark.min.svg?562092) 0 -50px no-repeat;
+}
+header[role=banner] nav .social-links li a {
+	display: block;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 26px;
+	text-decoration: none;
+}
+nav .facebook a {
+	background: url(../images/nav-sprites-dark.min.svg?562092) -1px 0 no-repeat;
+}
+header[role=banner] > h1 a {
+	display: block;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	height: inherit;
+	background: url(../images/pp-logo-light.min.svg?562092) 0 50% no-repeat;
+	background-size: contain;
+}
+header[role=banner] > h1 a {
+	background-image: url("../images/pp-logo-light.min.svg?562092");
+}
+</style>
+</head>
+<body class="region-national story" style="background-color: #000">
+
+	<!-- <script src="https://www.propublica.org/js/public/assets/beacons.js"></script>
+	<script src="https://connect.facebook.net/en_US/all.js"></script> -->
+	<!-- <script id="gtm-chtml-scroll-tracking" type="text/javascript">$(function(c){google_tag_manager["GTM-M4BNWZ"].macro(11)("CHTML - Scroll Tracking",function(){var f=!1,t=100,u=200,h=0,l=!1,m=!1,d=new Date,v=d.getTime(),k=0;d=c("#article-bottom");1>d.length&&(d=c("#content-bottom"));1>d.length&&(d=c(".like-this"));1>d.length&&(d=c(".foot-tools"));1>d.length&&(d=c(".site-footer"));var b=c("#article-top");1>b.length&&(b=c("#content-top").eq(0));1>b.length&&(b=c(".article .byline").eq(0));1>b.length&&(b=c(".article-full .byline").eq(0));1>b.length&&(b=c(".byline").eq(0));1>b.length&&(b=
+c(".mast-content").eq(0));if(0<b.length&&0<d.length)if(d.offset().top<b.offset().top&&0<c(".foot-tools").length&&(d=c(".foot-tools")),d.offset().top>b.offset().top){b=b.offset().top+b.height();var n,p,q,r,g=d.offset().top,w=.5*(g-b)+b,x=.25*(g-b)+b,y=.75*(g-b)+b,e,z=function(){var b=c(window).height()+c(window).scrollTop(),d=c(document).height();if(b>u&&!l){var a=new Date;e=a.getTime();a=Math.round((e-v)/1E3);f?console.log("started scrolling "+a):dataLayer.push({event:"scrollEvent",scrollProgress:"start-scroll",
+scrollTime:a});l=!0}b>=x&&!n&&(a=new Date,a=a.getTime(),a=Math.round((a-e)/1E3),f?console.log("hit 25% "+a):dataLayer.push({event:"scrollEvent",scrollProgress:"25%",scrollTime:a}),n=!0);b>=w&&!p&&(a=new Date,a=a.getTime(),a=Math.round((a-e)/1E3),f?console.log("hit 50% "+a):dataLayer.push({event:"scrollEvent",scrollProgress:"50%",scrollTime:a}),p=!0);b>=y&&!q&&(a=new Date,a=a.getTime(),a=Math.round((a-e)/1E3),f?console.log("hit 75% "+a):dataLayer.push({event:"scrollEvent",scrollProgress:"75%",scrollTime:a}),
+q=!0);b>=g&&!r&&(a=new Date,a=a.getTime(),a=Math.round((a-e)/1E3),f?console.log("hit 100% "+a):dataLayer.push({event:"scrollEvent",scrollProgress:"100%",scrollTime:a}),r=!0);b>=d&&!m&&(a=new Date,b=a.getTime(),k=Math.round((b-e)/1E3),f?alert("bottom of page "+k):dataLayer.push({event:"scrollEvent",scrollProgress:"bottom-page",scrollTime:k}),m=!0)};c(window).scroll(function(){h&&clearTimeout(h);h=setTimeout(z,t)})}else console.log("1 - not an article probably");else console.log("2 - not an article probably")})});</script><script id="gtm-disqus-callback" type="text/javascript">google_tag_manager["GTM-M4BNWZ"].macro(14)("CHTML - Disqus GTM Callback",function(){"undefined"!==typeof document.getElementById("comments")&&(window.disqus_config=function(){var a=window.disqus_config;return function(){a&&(window.console&&console.log("WARNING: disqus_config also set in Google Tag Manager, tag name CHTML - Disqus GTM Callback. Concatenating functions and executing."),a.apply(this,arguments));this.callbacks.onNewComment=[function(){window.dataLayer.push({event:"disqusComment"})}]}}())});</script><script id="gtm-tracking-facebook" type="text/javascript">google_tag_manager["GTM-M4BNWZ"].macro(17)("Tracking - Facebook",function(){function c(){try{$(".pocket-btn iframe, section.reddit iframe").each(function(){var b="unknown";this.src&&(-1<this.src.indexOf("//www.redditstatic.com")&&(b="reddit"),-1<this.src.indexOf("//widgets.getpocket.com")&&(b="pocket"));$(this).iframeTracker({blurCallback:function(){var a={};a.link=google_tag_manager["GTM-M4BNWZ"].macro(18);a.network=b;a.action="click";a.location="sticky nav";dataLayer.push({socialShare:a,event:"socialSave"})}})})}catch(b){}}setTimeout(function(){c()},
+4E3)});</script> -->
+	<div id="fb-root"></div>
+	<!-- <script>
+		FB.init({
+			appId: '229862657130557', // App ID
+			status: true, // check login status
+			cookie: true, // enable cookies to allow the server to access the session
+			xfbml: true // parse XFBML
+		});
+	</script> -->
+
+
+<header role="banner">
+
+  
+  <h1><a href="https://www.propublica.org/">ProPublica</a></h1>
+  
+
+  
+
+  <nav>
+    <ul class="social-links">
+      <li class="facebook social-widget ss-fb" data-hashtag="" data-url="https://features.propublica.org/ms-13/a-betrayal-ms13-gang-police-fbi-ice-deportation/" data-desc="The teenager told police all about his gang, MS-13. In return, he was slated for deportation and marked for death." data-txt="The teenager told police all about his gang, MS-13. In return, he was slated for deportation and marked for death." data-img="https://assets.propublica.org/images/externals/20180402-triste-portrait-OG.jpg" data-title="A Betrayal">
+          <a href="#">Share on Facebook</a>
+      </li>
+      <li class="twitter social-widget ss-tw" data-hashtag="" data-url="https://features.propublica.org/ms-13/a-betrayal-ms13-gang-police-fbi-ice-deportation/" data-txt="A Betrayal">
+          <a href="#">Share on Twitter</a>
+      </li>
+    </ul>
+
+    <ul class="donate-links">
+      
+      <li class="tab"><a href="https://donate.propublica.org/">Donate</a></li>
+      
+    </ul>
+
+  </nav>
+</header>
+<!-- end header[role="banner"] -->
+
+
+	<main role="main">
+		<div id="article-top"></div>
+
+		<article>
+
+	    <header class="opener">
+				
+				<div class="title-wrapper">
+					<div class="titles">
+						
+						<h1>A&nbsp;Betrayal</h1>
+						<h2 class="dek">The teenager told police all about his gang, MS-13. In return, he was slated for deportation and marked for&nbsp;death.</h2>
+						
+							
+							<span class="byline">by Hannah Dreier</span>
+							
+						
+						<time class="dateline">April  2, 2018</time>
+						<a class="co-publish" href="https://nymag.com/daily/intelligencer/2018/04/ms-13-ice-teen-informant.html">This story was co-published with New York magazine.</a>
+					</div><!-- end .titles -->
+				</div><!-- end .title-wrapper -->
+			</header><!-- end article header -->
+
+			<div class="content-wrapper">
+
+				<div class="content">
+					<figure class="large opening-video waypoint-enabled waypoint-active">
+  <div class="aspect-16-9">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Yi2lfa3L1MA?rel=0&amp;showinfo=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Ffeatures.propublica.org" frameborder="0" allowfullscreen="" allow="autoplay; encrypted-media"></iframe>
+  </div>
+  
+</figure>
+
+<p class="opening"><span class="lead-in"><span class="dropcap">I</span>f Henry is killed,</span> his death can be traced to a quiet moment in the fall of 2016, when he sat slouched in his usual seat by the door in 11th-grade English class. A skinny kid with a shaggy haircut, he had been thinking a lot about his life and about how it might end. His notebook was open, its pages blank. So he pulled his hoodie over his earphones, cranked up a Spanish ballad and started to write.</p>
+
+<aside class="promotion">
+  <div class="group">
+    <h3>Email&nbsp;Updates</h3>
+    <p>Sign up to get ProPublica’s major investigations delivered to your inbox.</p>
+    
+
+<div class="email-signup">
+    <form action="https://signup.propublica.org/newsletter/turing" method="post">
+        <div class="form-group">
+            <label for="email-signup-input-email">Sign up to get ProPublica’s investigations delivered to your inbox.</label>
+            <input name="email" class="required email" id="email-signup-input-email" onfocus="recaptchaInit()" type="email" placeholder="you@example.com" value="">
+            <input name="target" type="hidden" value="l/125411/2017-04-27/3zxtsb">
+            <input name="success_location" type="hidden" value="https://www.propublica.org/forms/thankyou">
+            <input name="origin_location" type="hidden" value="https://www.propublica.org/article/i-am-some-fake-article-or-am-i">
+            <input name="error_location" type="hidden" value="https://www.propublica.org/forms/error">
+        </div>
+        <input class="button g-recaptcha" id="email-signup-input-subscribe" type="submit" value="Subscribe">
+    </form>
+    <small>This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a> apply.</small>
+</div>
+<!-- end email signup form -->
+
+
+
+  </div>
+</aside>
+
+<p>He began with how he was feeling: anxious, pressured, not good enough. It would have read like a journal entry by any 17-year-old, except this one detailed murders, committed with machetes, in the suburbs of Long Island. The gang Henry belonged to, MS-13, had already killed five students from Brentwood High School. The killers were his friends. And now they were demanding that he join in the rampage.</p>
+
+<p>Classmates craned their necks to see what he was working on so furiously. But with an arm shielding his notebook, Henry was lost in what was turning out to be an autobiography. He was transported back to a sprawling coconut grove near his grandfather’s home in El Salvador. In front of him was a blindfolded man, strung up between two trees, arms and legs splayed in the shape of an X. All around him were members of MS-13, urging him on. Then the gang’s leader, El Destroyer, stepped forward. He was in his 60s, with the letters <em>MS</em> tattooed on his face, chest and back. A double-edged machete glinted in his hand. He wanted Henry to kill the blindfolded man.</p>
+
+<p>For years, the gang had paid for Henry’s school uniforms, protected him from rival gangs and given his grandmother meat for the family. In exchange, Henry had delivered messages and served as a lookout. Then the gang started asking him to come to shootouts, to help show strength in numbers. They also beat him for 13 seconds — an initiation ritual — and asked him to choose a gang name. He eventually settled on Triste, the Spanish word for “sad.” What you become when your parents abandon you as a toddler and go to America and leave you behind in a slum.</p>
+
+<p>Henry hunched over his notebook, oblivious to the kids around him. Now he was 12, standing in the coconut grove, and it was time to complete the final initiation rite. He took the machete. It was sharper, with more teeth, than the one he used for chores at home. El Destroyer traced his index finger on the trembling man to show Henry where to cut: first the throat, then across the stomach.</p>
+
+<p>“Your first killing will be hard,” El Destroyer told him. “It will hurt. But I’ve killed 34 people. I’m too tired to do this one.” He said the devil was there in the grove and needed fresh blood. And if Henry didn’t kill the man, the gang would kill them both.</p>
+
+<p><em>So, to live a little longer, I had to do it.</em></p>
+
+<p>But now, Henry wrote, he wanted to escape the life that had followed him from El Salvador. If he stayed in the gang, he knew he would die. He needed help.</p>
+
+<p>He tore out the pages and hid them inside another assignment, like a message in a bottle. Then he walked up to his teacher’s desk and turned them in.</p>
+
+<p>A week later, Henry was called to the principal’s office to speak with the police officer assigned to the school. In El Salvador, Henry had learned to distrust the police, who often worked for rival gangs or paramilitary death squads. But the officer assured Henry that the Suffolk County police were not like the cops he had known before he sought asylum in the United States. They could connect him to the FBI, which could protect him and move him far from Long Island.</p>
+
+<p>So after a childhood spent in fear, Henry made the first choice he considered truly his own. He decided to help the FBI arrest his fellow gang members.</p>
+
+<p>Henry’s cooperation was a coup for law enforcement. MS-13 was in the midst of a convulsion of violence that claimed 25 lives in Long Island over the past two years.</p>
+
+<p>President Trump had seized on MS-13 as a symbol of the dangers of immigration, referring to parts of Long Island as “bloodstained killing fields.” Police were desperately looking for informants who could help them crack how the gang worked and make arrests. Henry gave them a way in.</p>
+
+<p>Under normal circumstances, Henry’s choice would have been his salvation. By working with the police, he could have escaped the gang and started fresh. But not in the dawning of the Trump era, when every immigrant has become a target and local police in towns like Brentwood have become willing agents in a nationwide campaign of detention and deportation. Without knowing it, Henry had picked the wrong moment to help the authorities.</p>
+
+<figure class="medium waypoint-enabled">
+  <picture>
+    <source media="(min-width: 37.5em) and (-webkit-min-device-pixel-ratio: 1.3), (min-width: 37.5em) and (min-resolution: 124.8dpi)" srcset="https://features.propublica.org/ms-13/assets/images/generated/illo-beating-976*1704-ad76b2.jpg">
+    <source media="(min-width: 37.5em)" srcset="https://features.propublica.org/ms-13/assets/images/generated/illo-beating-900*1571-ad76b2.jpg">
+    <source media="(-webkit-min-device-pixel-ratio: 1.3), (min-resolution: 124.8dpi)" srcset="https://features.propublica.org/ms-13/assets/images/generated/illo-beating-960*1676-ad76b2.jpg">
+    <img alt="" src="https://features.propublica.org/ms-13/assets/images/generated/illo-beating-480*838-ad76b2.jpg">
+</picture>
+</figure>
+
+<p><span class="lead-in">Henry had tried</span> to escape MS-13 before.</p>
+
+<p>From the day he joined the gang, he was part of an operation that trafficked in a single product: violence. Other criminal enterprises attract members who want to get rich and who sell drugs or women or stolen goods to achieve that aim. Violence is a tool for carving out territory and regulating the marketplace. MS-13, by contrast, was established by Salvadoran refugees in Los Angeles who were seeking community after fleeing civil war. The gang offers a sense of security and belonging to its members, who kill to strengthen the group and move up the ranks. Members sometimes sell marijuana and cocaine, but major cartels have been uninterested in partnering with the gang, because purposeless violence is bad for business. MS-13 kills in large groups to minimize betrayal, and it uses machetes, a weapon even the poorest can afford.</p>
+
+<p>In his first few years running with the gang in El Salvador, Henry witnessed more than a dozen murders. He learned how soft skin feels when you slice into it and how bodies, when they are sprayed with bullets, look like they are dancing. Then, in 2013, a shaky truce between MS-13 and the rival gang Barrio 18 broke down. The country’s slums became as dangerous as any war zone. One afternoon, when he was 15, Henry was playing cards in an abandoned lot when he got a call from a stranger. The voice on the phone told him that if he did not leave the country within 24 hours, he would be disappeared — along with his grandparents. To protect his family, Henry set out that night to join his mother and father on Long Island. Before he left, his grandfather made him promise he would use the new start to break with the gang.</p>
+
+<p>Henry made the journey north through Mexico stowed away in the back of a livestock truck. Some 200,000 unaccompanied children from Central America have shown up at the U.S. border since 2013, and nearly 8,000 continued on to Long Island, most to join parents who had settled there years earlier. The suburbs have proved an ideal landing spot — close to low-wage work around New York City and filled with illegal basement apartments. By the time Henry arrived, so many Salvadorans were living in Suffolk County that El Salvador had opened a consulate in the town of Brentwood, the only foreign government with an office on Long Island.</p>
+
+<p>Henry entered the U.S. legally, turning himself over at the border and pleading for asylum. He was granted release pending a final hearing that could be years away, and sent to join his mother. He didn’t recognize her when she ran up to him at JFK Airport, clutching welcome balloons; in all the time she’d been gone, she had never sent him a photo. As they headed to her apartment, he learned that she had long ago separated from his father. He soon became acquainted with her abusive boyfriend, who one day threw hot cooking oil at her head, landing her in the hospital with third-degree burns. His father helped Henry lie about his immigration status and age to get a job in a factory, where he worked 12-hour shifts punching perforations in toilet paper for $9 an hour. On payday, he handed over almost all his earnings to his mother, who expected him to pay for rent and groceries.</p>
+
+<figure class="medium waypoint-enabled">
+  <picture>
+    <source media="(min-width: 37.5em) and (-webkit-min-device-pixel-ratio: 1.3), (min-width: 37.5em) and (min-resolution: 124.8dpi)" srcset="https://features.propublica.org/ms-13/assets/images/generated/20180402-strip-mall-1800*1350-891e15.jpg">
+    <source media="(min-width: 37.5em)" srcset="https://features.propublica.org/ms-13/assets/images/generated/20180402-strip-mall-900*675-891e15.jpg">
+    <source media="(-webkit-min-device-pixel-ratio: 1.3), (min-resolution: 124.8dpi)" srcset="https://features.propublica.org/ms-13/assets/images/generated/20180402-strip-mall-960*720-891e15.jpg">
+    <img alt="" src="https://features.propublica.org/ms-13/assets/images/generated/20180402-strip-mall-480*360-891e15.jpg">
+</picture>
+  <figcaption>This strip mall in Brentwood was identified by police as a known hangout for MS-13, a gang established by Salvadoran refugees seeking community in the United States after fleeing civil war. So many Salvadorans live in Brentwood, El Salvador has a consulate there. <span class="credit">(Natalie Keyssar, special to ProPublica)</span></figcaption>
+</figure>
+
+<p>That summer was the loneliest time Henry had ever known. Unable to speak English or navigate the bus system, he barely left the house except to work. His father sometimes sat next to him on meal breaks at the factory, but Henry didn’t know what to say, and his father didn’t seem interested in talking. He found the wide, empty streets of Brentwood eerie after the crowded slums of El Salvador, and he was unsettled by the misty weather. His mother worked late, so he was often on his own. At night, as he sat in the dark watching horror movies, he couldn’t help but miss aspects of the gang — never being bored, always having backup.</p>
+
+<p>All that changed when he enrolled at Brentwood High in the fall of 2014. The school — one of the largest in America, with 4,000 students — felt like a fortress, ordered and welcoming and safe. The overhead lights were brighter and the walls whiter than his schoolhouse in El Salvador, which had been ringed with fencing to stop pigs and chickens from wandering through. Posters on the wall advertised spirit rallies. At orientation, Henry learned that the school had a swimming pool and a music program. He had never touched an instrument before.</p>
+
+<p>His classes were filled with so many recent arrivals from Central America that they were taught in both English and Spanish. The kids talked about soccer and teachers and tried out their shy English on each other at lunch. One friend was struck by the long hours Henry had to work after school and how reluctant he seemed to talk about his childhood in El Salvador. Another liked his funny, street way of talking; he nicknamed her Curly, and that became what everyone in school called her. “He would always want to know how things were going with me, like he was a brother,” she says. “He would get really serious, and we would think up crazy things to do to make him laugh.”</p>
+
+<p>Henry loved every minute of his freshman year: buying sandwiches at the deli with his friends, playing soccer in the park. One friend gave him an old bike so he could get around more easily; others came to visit him at his second job at a car wash. An uncle started to show an interest in him, taking him fishing off the piers at dawn. Noticing that his nephew was friendly and curious, he warned Henry to steer clear of MS-13, which had already established itself on Long Island. “I told him don’t let them become your friends, but don’t let them be your enemies either,” the uncle recalls. “Because that would be seeking death.”</p>
+
+<p>Henry knew how to pick out the gang kids at school — red shirts and bandannas for the Bloods, yellow for Latin Kings, royal blue for the Crips, light blue and white for MS-13. At first, Henry had worried that El Destroyer’s crew would find him: He knew membership in MS-13 is for life, no matter where you move. But as his freshman year passed and no one from his old life recognized him, he began to relax. Maybe it really was possible to start over.</p>
+
+<hr>
+
+<p><span class="lead-in">His new life</span> began to fall apart at the start of his sophomore year, when Henry saw El Fantasma. The boy, a shot-caller in the gang back home, had enrolled at Brentwood High that fall. One day, he confronted Henry in the cafeteria. He ordered him to attend a meeting in the woods that afternoon, to receive his punishment for failing to report in.</p>
+
+<p>In El Salvador, cutting ties with the gang would have landed Henry on a kill list. But in the suburbs of Long Island, MS-13 had softened its rules. Here, recruits didn’t have to commit a murder to join the gang. Members could socialize with outsiders, and a beating would do for punishment. After school, Henry found more than a dozen boys waiting for him in the woods. There was El Monkey and El Satanico and El Big Homie — willowy teenagers in the midst of growth spurts, with pierced ears, gelled hair and skinny jeans. They punched and kicked Henry until he curled up into a ball on the ground, then continued for a drawn-out count of 13. “The blows came from all sides like rain,” Henry would later recall. “I had wanted to change, and I’d been succeeding for months at that point. But that’s when it ended.”</p>
+
+<p>Henry felt guilty about breaking the promise he’d made his grandfather. But it was also a relief to fall back into his old ways. The gang on Long Island had the same rituals and spoke the same slangy Spanish he’d grown up with. Like any good franchise, MS-13 was comfortingly familiar.</p>
+
+<figure class="full waypoint-enabled">
+  <picture>
+    <source media="(min-width: 37.5em) and (-webkit-min-device-pixel-ratio: 1.3), (min-width: 37.5em) and (min-resolution: 124.8dpi)" srcset="https://features.propublica.org/ms-13/assets/images/generated/20180402-ms-13-graffiti-1800*1200-a8fb61.jpg">
+    <source media="(min-width: 37.5em)" srcset="https://features.propublica.org/ms-13/assets/images/generated/20180402-ms-13-graffiti-900*600-a8fb61.jpg">
+    <source media="(-webkit-min-device-pixel-ratio: 1.3), (min-resolution: 124.8dpi)" srcset="https://features.propublica.org/ms-13/assets/images/generated/20180402-ms-13-graffiti-960*640-a8fb61.jpg">
+    <img alt="" src="https://features.propublica.org/ms-13/assets/images/generated/20180402-ms-13-graffiti-480*320-a8fb61.jpg">
+</picture>
+  <figcaption>In a section of woods known as a favorite gang hangout, MS-13 marks its turf with “503,” the country calling code of El Salvador. <span class="credit">(Natalie Keyssar, special to ProPublica)</span></figcaption>
+</figure>
+
+<p>In the U.S., MS-13 is organized into small subgroups called cliques. Its emphasis on social rather than criminal bonds has helped the gang persist without a powerful central leader or a steady source of income. On the East Coast, the highest regional level is the “New York program” — middle management put in place by bosses in El Salvador and Los Angeles to oversee unruly cliques, including a dozen on Long Island. At Brentwood High, the main clique is known as the Sailors. Henry began wearing the white plastic rosary they favored, and picked up Chicago Bulls gear, which the gang wears because bullhorns evoke the devil, a central figure in MS-13’s symbology. He identified himself to new recruits as <em>Triste, Sailors, New York</em>, like a soldier stating his rank and chain of command. He was low on the totem pole: His main duty was to ensure that the clique’s 30 or so members were respected in the school. He learned how to turn a mechanical pencil into a weapon by replacing the eraser with a razor blade, and how to threaten boys who tried to get close to the Sailors’ girlfriends. “If you want to stay aboveground, it’s better you stay away from her,” he warned them. It worked every time.</p>
+
+<p>Back in El Salvador, the gang was led by veterans hardened by decades of violence. On Long Island, the Sailors were led by a pair of teenage brothers who lived with their mom and kept the gang’s cache of machetes, swords and hatchets buried in their backyard. They navigated the neighborhood on dirt bikes and met up at McDonald’s and worked long hours at normal jobs. They created a hangout in a mulchy clearing in the woods, where they spray-painted tree trunks with stick-figure devils and laughing clown faces. One day, they hoisted an old mattress on a stump to make a lean-to and drew the outline of a naked woman on the fabric. Dues were $10 a week. In Facebook group chats, they talked about girls and Clash of Clans, their favorite multiplayer game. They also shared news of friends and enemies getting arrested in Long Island or murdered back in El Salvador. One wrote: “Did you see El Black, El Funny, El Flash and the others have fallen?” Another said: “I miss El Bad Boy.”</p>
+
+<p>That Christmas, his mother, who had been increasingly distant, left to live in a domestic violence shelter without saying goodbye. Henry moved in with his uncle. He texted the Sailors to tell them how he felt abandoned, once again, by his parents. “We’re your family,” one responded, “and we’ll never abandon you.” Henry was comforted, but he knew that his relationship with his gang friends could crumble the moment he did anything to make them question his loyalty, no matter how simple the transgression — even being slow to answer a text message.</p>
+
+<p>One afternoon in English class, Henry caught the eye of a girl who had been feuding with the Sailors. She scowled at him, and he responded by flashing the signs <em>M</em> and <em>S</em> with his hands. She folded her hand into a <em>B</em> for Bloods. After class, Henry told the gang leaders what she had done. They seemed conflicted. The girl was just 15, with long hair and a wide-eyed expression. Then again, they told Henry, <em>hasta el peor demonio se viste de ángel</em>: Even the worst demons hide in angels’ clothing. They decided to keep an eye on the girl. If she kept testing them, she would have to fall.</p>
+
+<hr>
+
+<figure class="medium waypoint-enabled">
+  <picture>
+    <source media="(min-width: 37.5em) and (-webkit-min-device-pixel-ratio: 1.3), (min-width: 37.5em) and (min-resolution: 124.8dpi)" srcset="https://features.propublica.org/ms-13/assets/images/generated/20180402-woods-grass-1800*1334-8065ce.jpg">
+    <source media="(min-width: 37.5em)" srcset="https://features.propublica.org/ms-13/assets/images/generated/20180402-woods-grass-900*667-8065ce.jpg">
+    <source media="(-webkit-min-device-pixel-ratio: 1.3), (min-resolution: 124.8dpi)" srcset="https://features.propublica.org/ms-13/assets/images/generated/20180402-woods-grass-960*711-8065ce.jpg">
+    <img alt="" src="https://features.propublica.org/ms-13/assets/images/generated/20180402-woods-grass-480*356-8065ce.jpg">
+</picture>
+  <figcaption>Plants in the woods in Brentwood where several bodies of MS-13 victims were found in 2016 <span class="credit">(Natalie Keyssar, special to ProPublica)</span></figcaption>
+</figure>
+
+<p><span class="lead-in">By the summer of 2016,</span> the Sailors and other cliques were starting to return to their violent roots. They began selling marijuana and getting into street fights. Teenagers who wore yellow or red shirts were listed for death; those who acted like they were MS-13 without actually belonging were listed as well. In the first half of that year, the gang killed three boys from Brentwood High and buried their bodies in the woods.</p>
+
+<p>Henry joined in the fights and sold marijuana, but he didn’t want to participate in another murder. In El Salvador, the violence had seemed necessary, a form of survival. In Brentwood, the Sailors wanted Henry to help lure his classmates to their death — kids he knew from homeroom and parties and field trips — simply because they were acting like kids. MS-13 was like any other bunch of bored and anxious and hormonal teenagers at school, only with machetes.</p>
+
+<p>Local detectives who later questioned Henry, as well as his own texts and Facebook messages, confirm that he stayed on the outskirts of the gang, avoiding the most extreme violence. He tried pretending that he had suddenly been put under curfew. “Look man,” he texted the leaders one night, “the problem is my uncle is here watching me like a hawk.” They backed down that time, but it was clear they were losing trust. “Yesterday, El Delincuente said he thought I was acting like I don’t want to be in anymore,” he wrote a friend on Facebook. “He said I knew from the moment I joined that the only way out is a coffin. So now you know that if one day I’m not on here, it’s because I’m already dead.”</p>
+
+<figure class="inset waypoint-enabled">
+  <picture>
+    <source media="(min-width: 37.5em) and (-webkit-min-device-pixel-ratio: 1.3), (min-width: 37.5em) and (min-resolution: 124.8dpi)" srcset="https://features.propublica.org/ms-13/assets/images/generated/20180402-grave-marker-1800*2431-6f43ba.jpg">
+    <source media="(min-width: 37.5em)" srcset="https://features.propublica.org/ms-13/assets/images/generated/20180402-grave-marker-900*1215-6f43ba.jpg">
+    <source media="(-webkit-min-device-pixel-ratio: 1.3), (min-resolution: 124.8dpi)" srcset="https://features.propublica.org/ms-13/assets/images/generated/20180402-grave-marker-960*1296-6f43ba.jpg">
+    <img alt="" src="https://features.propublica.org/ms-13/assets/images/generated/20180402-grave-marker-480*648-6f43ba.jpg">
+</picture>
+  <figcaption>Kayla Cuevas, the Brentwood High student who feuded with the Sailors, was laid to rest near the headstone of another plot at the Queen of All Saints Cemetery in Central Islip. <span class="credit">(Natalie Keyssar, special to ProPublica)</span></figcaption>
+</figure>
+
+<p>As Henry started his junior year, the girl who had flashed a Bloods sign at him was finally placed on the gang’s kill list. She had continued feuding with the Sailors, and even according to the softer rules on Long Island, the only punishment for rival gang members is death. One afternoon, a car full of Sailors spotted the girl as she was walking home with a friend. They jumped out and attacked her with bats and machetes. They killed her friend as well, to avoid leaving a witness. She was beaten so badly that police initially thought she had been hit by a car.</p>
+
+<p>The exploding violence on Long Island was almost entirely aimed at kids who were flirting with gang life; in texts, the Sailors were careful to distinguish whether an intended target was a “civilian” — only suspected snitches and rival gang members were marked for violence. The Sailors rarely hurt civilians except by accident: In one incident, they shot a young man at a deli they believed was a rival gang member, and the bullet passed through the man’s skull and hit the deli worker behind the cash register.</p>
+
+<p>That fall, not long after the two girls were killed, police discovered the bodies of the three boys MS-13 had buried in the woods. Henry obsessed over the footage of their grief-stricken families on the TV news. He imagined his grandfather crying at his own funeral. He started looking for ways to escape the gang for good, but there seemed to be no way out. He approached U.S. military recruiters in school, eager to join the Army, but they told him that he was too young to enlist without a form from his parents. When he called his grandparents and told them he was struggling to get his life back on track, they told him to go to church and confess.</p>
+
+<p>In school, Henry grew increasingly anxious and moody. That day in English class, staring at a blank page in his notebook, he felt he was ready to explode. He hadn’t planned to write a confession, but it just poured out — the murders, the beatings, his growing remorse about what he had done in El Salvador. He needed help, and he wanted his teacher to know that he hadn’t killed those two girls. She had always seemed to want him to succeed, and he thought of her as a second mother.</p>
+
+<p>Lingering at the door after the bell rang, he saw his teacher discover the pages, noting with confusion that he had signed them “Triste.” He saw her cheeks flush and tears come to her eyes. In that moment, the import of what he had done started to sink in. The Sailors were already losing trust in him. If they found out what he had told his teacher, they would surely add him to the kill list.</p>
+
+<p>He stayed away from school for a full week. When he returned, the teacher pulled him aside. She asked him why he had written the pages instead of talking to her. He said he didn’t think he could have gotten it out face-to-face. He had worried she would be mad, but instead she gave him a tender look and said she wanted to help him.</p>
+
+<figure class="large waypoint-enabled">
+  <picture>
+    <source media="(min-width: 37.5em) and (-webkit-min-device-pixel-ratio: 1.3), (min-width: 37.5em) and (min-resolution: 124.8dpi)" srcset="https://features.propublica.org/ms-13/assets/images/generated/illo-police-1190*898-32b300.jpg">
+    <source media="(min-width: 37.5em)" srcset="https://features.propublica.org/ms-13/assets/images/generated/illo-police-900*679-32b300.jpg">
+    <source media="(-webkit-min-device-pixel-ratio: 1.3), (min-resolution: 124.8dpi)" srcset="https://features.propublica.org/ms-13/assets/images/generated/illo-police-960*724-32b300.jpg">
+    <img alt="" src="https://features.propublica.org/ms-13/assets/images/generated/illo-police-480*362-32b300.jpg">
+</picture>
+</figure>
+
+<p><span class="lead-in">The message calling him</span> to the principal’s office came over the intercom while Henry was sitting in class, texting a friend. His classmates teased him as he left, assuming he was in trouble again. But when he got to the office, he was introduced to a stranger in a suit. The Suffolk County police officer who was stationed in the school, George Politis, told Henry that the man was from the FBI. If Henry wanted to help, Politis said, he should tell the man everything he knew, because the FBI could give him a new identity and relocate him far from Long Island.</p>
+
+<p>The stranger asked Henry to come up with an alias for him. Henry chose the name Tony and the last initial <em>F,</em> for <em>federale</em>. In reality, Tony was Angel Rivera, a Suffolk County homicide detective detailed to the FBI’s Long Island Gang Task Force. With his menacing face and air of authority, he reminded Henry of El Destroyer, the gang leader back home. And unlike Politis, Rivera spoke Spanish. Henry decided to trust him. He knew about the witness protection program from TV shows, and he thought this could be his ticket out of MS-13. But Rivera never offered him a formal agreement.</p>
+
+<p>Rivera had spent the previous month questioning gang members rounded up after the murder of the two girls. They either blew him off or grudgingly negotiated to save themselves from years in prison. But Henry faced no charges; he was volunteering to come forward as an informant. He seemed eager to unburden himself. After the initial meeting they spoke only over the phone or via text. Henry tried to answer whenever Rivera reached out, and apologized when he was unavailable. “I’m sorry I didn’t answer you quickly,” he wrote one afternoon when he missed a few messages. “It’s just that I was sleeping because I work nights.”</p>
+
+<p>Rivera texted him looking for leads about the gang’s plans and for help connecting gang aliases with real names. The exchanges read like debriefings a teenager in a talkative mood might give a probing parent. One night, Henry complained about two fellow gang members. “One told me, ‘You’ve been in this since you were 12 because you liked it, and now you want to leave?’”</p>
+
+<p>Rivera asked for that boy’s given name and gang name. He wanted to know if Henry had any ideas about how to catch him breaking the law. “Do you know if he had a gun?” he asked. “Or if he sells drugs? Are they here illegally?”</p>
+
+<p>Henry kept on going with his story, focused on his own troubles. “Another one of them told me, ‘You’re useless. I don’t know why we keep you around. You don’t do anything.’ And I said, ‘If I’m useless, why don’t you let me out?’ And he told me, ‘Quiet, man. We’re never letting you out. We’re always going to have you, whether you like it or not.’”</p>
+
+<p>Rivera tried to steer the conversation in a more evidentiary direction. “I’m thinking I’d like to catch them with a gun,” he wrote. “Or if you know of anything.”</p>
+
+<p>“I’ll keep you posted,” Henry promised.</p>
+
+<p>“Okay,” Rivera responded, “but be cool.”</p>
+
+<p>After a few days, Rivera got in touch again: “You don’t have to worry about that boy any more.” Thanks to the name Henry had provided, the boy had been swept up by Immigration and Customs Enforcement.</p>
+
+<p>Since Trump’s election, the Suffolk County Police Department has stepped up its cooperation with ICE, targeting suspected MS-13 members for deportation. Shipping suspects back to Central America is easier and quicker than proving they have broken the law; even if suspects have committed no crime, ICE can petition to have their immigration bail revoked. In effect, it is a repeat of the same failed strategy that led to the creation of MS-13. The gang first spread to El Salvador from Los Angeles amid a wave of deportations in the 1990s that sent members like El Destroyer back to Henry’s slum. Now, by deporting children who have come to America seeking escape from MS-13, the Trump administration is only intensifying the cycle that drove them here in the first place.</p>
+
+<p>Last year, under Trump, ICE arrested nearly four times more immigrants simply for being suspected of belonging to MS-13 than it did in 2016. Long Island has been the epicenter of the new initiative, called Operation Matador. Trump and Attorney General Jeff Sessions both delivered major speeches in front of the Suffolk police last year and congratulated them on embracing the administration’s strategy. Trump also invited the mother of Kayla Cuevas, the murdered girl who had flashed the Bloods sign at Henry, to his State of the Union address in January. In private, some Long Island detectives and prosecutors grumbled about the ICE partnership, saying it hampers efforts to investigate the gang. But as the wave of arrests attracted federal grants, additional staff and positive national media attention, Suffolk County effectively began to serve as a local arm of ICE, rounding up immigrant kids for deportation.</p>
+
+<figure class="large waypoint-enabled">
+  <picture>
+    <source media="(min-width: 37.5em) and (-webkit-min-device-pixel-ratio: 1.3), (min-width: 37.5em) and (min-resolution: 124.8dpi)" srcset="https://features.propublica.org/ms-13/assets/images/generated/20180402-suffolk-police-1800*1350-efb460.jpg">
+    <source media="(min-width: 37.5em)" srcset="https://features.propublica.org/ms-13/assets/images/generated/20180402-suffolk-police-900*675-efb460.jpg">
+    <source media="(-webkit-min-device-pixel-ratio: 1.3), (min-resolution: 124.8dpi)" srcset="https://features.propublica.org/ms-13/assets/images/generated/20180402-suffolk-police-960*720-efb460.jpg">
+    <img alt="" src="https://features.propublica.org/ms-13/assets/images/generated/20180402-suffolk-police-480*360-efb460.jpg">
+</picture>
+  <figcaption>A vintage police car in front of the Suffolk County Police Department headquarters in Yaphank, New York. After President Trump’s election, the Suffolk police stepped up cooperation with ICE, sharing information about suspected gang members that ICE used to mark them for deportation. <span class="credit">(Natalie Keyssar, special to ProPublica)</span></figcaption>
+</figure>
+
+<p>Children’s advocates on Long Island started to warn teenagers to avoid the cops. “We can’t work with Suffolk County police, because any information they have is going to go straight to ICE,” says Feride Castillo, who runs a program for at-risk youth on Long Island. “I tell my immigrant kids all the time not to open their mouths — I don’t care what they’re promising you.”</p>
+
+<p>Henry did his part to aid the federal crackdown on MS-13. In addition to the gang members he reported to Rivera, he shared what he knew about the killings and supplied the names of 11 kids who had been marked for death by the Sailors. That spring, the FBI task force arrested the brothers who led the clique on multiple murder charges.</p>
+
+<p>When Henry learned that his grandfather had died in his sleep in El Salvador, he locked himself in his room and spent the night crying, vowing to do better. He scratched his grandfather’s initials into the back of his cellphone as a reminder. He started seeing a therapist. At school, he sat in the front of his classes and spoke up more often. He especially liked history class, where he learned about pre-Columbian tribes that extracted still beating hearts from their sacrificial victims.</p>
+
+<p>Now that he had helped the police, Henry assumed his witness protection papers would be coming through any day. When he turned 18, he started telling friends and teachers he trusted that he would soon disappear to California. Then one morning in August, as Henry was making lunch for his shift at the toilet paper factory, the <em>federales</em> finally came for him. But they weren’t from the FBI or the witness protection program. They were from ICE. The same unit that Henry had helped to arrest members of MS-13 was now pursuing a deportation case against him, using the information he had provided as evidence.</p>
+
+<p>Confused, Henry told the agents he was already working with the police. He asked them to call Tony. Instead, after interrogating him, the ICE agents put him on a bus. He watched the Long Island streets he knew disappear, replaced by the high-rises of downtown Manhattan, then darkness as the bus was swallowed by a tunnel to New Jersey. He was headed to an ICE detention center full of young men suspected of being MS-13 members — the very same ones he had snitched on.</p>
+
+<figure class="medium waypoint-enabled">
+  <picture>
+    <source media="(min-width: 37.5em) and (-webkit-min-device-pixel-ratio: 1.3), (min-width: 37.5em) and (min-resolution: 124.8dpi)" srcset="https://features.propublica.org/ms-13/assets/images/generated/illo-gang-1020*1022-4d41c4.jpg">
+    <source media="(min-width: 37.5em)" srcset="https://features.propublica.org/ms-13/assets/images/generated/illo-gang-900*902-4d41c4.jpg">
+    <source media="(-webkit-min-device-pixel-ratio: 1.3), (min-resolution: 124.8dpi)" srcset="https://features.propublica.org/ms-13/assets/images/generated/illo-gang-960*962-4d41c4.jpg">
+    <img alt="" src="https://features.propublica.org/ms-13/assets/images/generated/illo-gang-480*481-4d41c4.jpg">
+</picture>
+</figure>
+
+<p><span class="lead-in">At first, Henry was confident</span> that he would be released from ICE custody in time for the start of his senior year. But as the weeks passed, he fell into a routine of sketching anime characters, watching TV and looking forward to the days when chicken was served in the jail’s cafeteria.</p>
+
+<p>One night, as Henry sat in the TV room watching a reality show about aspiring Miami rappers, a half-dozen MS-13 members walked up to him, led by a Brentwood High student who had established himself as the gang’s leader on the ward. The boy called him Triste and demanded to see his detention memo.</p>
+
+<p>Every inmate rounded up in ICE’s anti-gang raids is given a memo explaining why the government has pegged him as a member of MS-13. Most are short and vague. They list things like school suspensions, Facebook posts and statements by anonymous informants. Henry’s memo is so specific that it amounts to a signed confession. It lists the details that Henry confided to George Politis, the school’s police officer. It quotes his account of the murder he committed back in El Salvador. And most damning, it reveals that he informed on the Sailors to the Suffolk County police. “The subject told SCPD that he has recently had contact with the following confirmed MS-13 members,” the memo says, listing the names of El Fantasma and another Sailor. Instead of protecting his identity as an informant, the police and ICE had effectively signed his death warrant.</p>
+
+<p>“He’s screwed,” says John Oliva, a retired member of the FBI’s Long Island Gang Task Force who saw Henry’s memo. “At the end of the day, that kid is going to become a statistic. If he wanted out, he should have just moved to another town, lived in a basement apartment with ten other people, and started working his way out.”</p>
+
+<p>The MS-13 members who were locked up with Henry suspected that he had been an informant. The only way to clear his name and save his life, the boy from Brentwood warned him, was to produce his detention memo. For weeks, Henry tried to put them off. He told them he was waiting for his lawyer to send it, but that wasn’t credible for long. When the boys started coming around to his bed at night to ask about the memo, he signed up to work an overnight shift in the kitchen, drinking weak coffee to stay awake until morning, then lying on his bed during the day trying to fall asleep. Every day he waited for the attack to come. Gang members in the jail routinely got into violent fights, splattering the floor with blood until they were broken up by guards known as <em>tortugas,</em> because their oversize helmets and heavy armor made them look like turtles.</p>
+
+<p>Finally, sitting cross-legged on his bunk with a piece of paper barely thicker than a tissue, Henry once again decided to scribble a plea for help. This time he addressed it to his lawyer, Bryan Johnson, asking him to put together a fake memo he could show the gang.</p>
+
+<p>“I just need a document saying I was questioned by the FBI but didn’t tell them anything,” Henry wrote. “The members here have said that if I don’t show them my memo, they’ll know I’m a rat, and that will be the end of me. They’ll greenlight the hunt.”</p>
+
+<p>He ended with an apology. “Forgive how bad my handwriting is. It’s just that I feel very scared right now.”</p>
+
+<p>Johnson was rattled by the letter. He couldn’t create a fake memo for Henry, but there was a chance he could get him out of ICE custody by appealing to a federal court. The government has a program that gives green cards to people with criminal records who cooperate with investigators. It is especially intended for immigrants who might be killed back home. Henry could qualify, but he would need someone from law enforcement to confirm that his information had been valuable.</p>
+
+<figure class="medium waypoint-enabled">
+  <picture>
+    <source media="(min-width: 37.5em) and (-webkit-min-device-pixel-ratio: 1.3), (min-width: 37.5em) and (min-resolution: 124.8dpi)" srcset="https://features.propublica.org/ms-13/assets/images/generated/20180402-police-surveillance-1800*1350-e470cf.jpg">
+    <source media="(min-width: 37.5em)" srcset="https://features.propublica.org/ms-13/assets/images/generated/20180402-police-surveillance-900*675-e470cf.jpg">
+    <source media="(-webkit-min-device-pixel-ratio: 1.3), (min-resolution: 124.8dpi)" srcset="https://features.propublica.org/ms-13/assets/images/generated/20180402-police-surveillance-960*720-e470cf.jpg">
+    <img alt="" src="https://features.propublica.org/ms-13/assets/images/generated/20180402-police-surveillance-480*360-e470cf.jpg">
+</picture>
+  <figcaption>Near a park where the mutilated bodies of four young men were found in April 2017, murdered by MS-13, a sign states, “This area is under Suffolk County Police Dept. 24 hour video surveillance.” <span class="credit">(Natalie Keyssar, special to ProPublica)</span></figcaption>
+</figure>
+
+<p>Johnson texted Rivera, asking him to share what he knew at Henry’s asylum hearing, which is slated for April 5. Rivera texted back the names of two boys that Henry had helped get arrested. But he refused to testify, citing concern for his own safety. “My job doesn’t allow me to do that,” he wrote, “especially in my situation being an enemy of MS-13 and several certain individuals incarcerated for murder.” The federal prosecutor overseeing the murder cases involving the Sailors also declined to assist in Henry’s defense, as did Politis.</p>
+
+<p>The choice to turn an informant like Henry over to ICE has consequences far beyond his individual case. If gang members can’t receive protection in exchange for coming forward with information, police will have almost no means to penetrate the insular world of MS-13. School officials who turned Henry over to the authorities were outraged when they learned he had been trapped in a no man’s land between the gang and the law. “They certainly were taking advantage of what he had to offer,” says Robert Feliciano, the head of the Suffolk County school board. “You can’t just do that and then drop him.”</p>
+
+<p>Those who work to get kids out of gangs echo that concern. “Anyone in MS-13 who sees what’s going on with this guy, they’re not going to want to talk to the cops,” says Bob DeSena, founder of the Council for Unity, one of the largest gang intervention programs in New York. “The one thing you never do — the last thing the police want to do — is send a message that if you cooperate with the police, you’re not going to get protection and no one is going to come speak up for you. Rivera, if he wasn’t full of shit, should pick up the phone and say, ‘Look, this guy helped us.’”</p>
+
+<p>In fact, it appears that Henry’s case was mishandled at almost every step along the way. Everyone involved places the blame on someone else. The school says it was required by law to tell the police that Henry was in danger. The police, who told ICE about Henry, blame the feds for trying to deport him. The FBI says that Rivera wasn’t officially a member of the task force, even though he was working out of the bureau’s office. And ICE says that it didn’t know that Henry was an informant. It acknowledges, however, that creating detention memos for kids like Henry puts their lives at risk, and it has decided to end the practice. “That memo was not intended for public consumption,” says Rachael Yong Yow, an ICE spokesperson. “You do these memos, and then something like this happens.”</p>
+
+<p>One of the gang members that Henry turned over to Rivera, meanwhile, has been released by ICE. Unlike Henry, he did not admit to being a member of MS-13, and ICE was unable to prove it. All told, a quarter of the 200 immigrants rounded up in ICE’s anti-gang operation on Long Island last year have been released because of insufficient evidence. So Henry is marked for death and slated for deportation, while the gang members he helped his handler target go free.</p>
+
+<p>“Just for having talked, all this is happening,” Henry says. “They were asking for help, and I gave them all these names. So how am I here?”</p>
+
+<hr>
+
+<p><span class="lead-in">Sitting across from</span> me in ICE custody, Henry still looks like a boy. His orange jumpsuit pools at his feet, and he has stenciled “Henry” on his shirtsleeve in graffiti-style writing. He’s still getting veiled threats from the boys who want to see his ICE memo. The other day, a fellow gang member told him the bosses were sending killers from Los Angeles to take care of a suspected snitch in New York. Another said he had recently used a machete to carve a suspected informant’s lips into a gruesome smile, then buried the body near the Brentwood train tracks.</p>
+
+<p>Henry describes the most horrifying moments of his life in a flat, hyperdetailed way, as if he were watching a movie and narrating the plot. Like many children who have witnessed traumatic events, his mind has recorded the minutest details, but there are huge gaps in the emotional content. One day, he tells me about seeing the gang execute a dirty cop in El Salvador who had tattooed the logo of a rival gang on his inner lip. “They were shouting, ‘This is what happens when you work with punks from the other gang.’ You could see the bullets going into his chest, his stomach, his arms.” When I ask how the killing made him feel, he responds by calculating the number of bullets he thought had blasted apart the victim’s body: 235.</p>
+
+<p>Talking about his memories actually seems to ease Henry’s fears as he imagines what will happen next. If he is deported, anyone who takes him in would be putting themselves at risk. Back in El Salvador, he watched gang members stake out the homes of suspected traitors, then kill their brothers and cousins when they stepped outside. Even if he is granted asylum and returns to Brentwood, the gang will likely kill him unless he gets help relocating.</p>
+
+<p>As he waits in the crowded jail, surrounded by gang members who want to kill him, Henry sometimes lies on his bed with his face hidden and cries. He imagines himself strung up in the same sprawling coconut grove where he killed the trembling man. He has resolved that he will not beg or try to bargain as he has seen others do. “Sometimes I feel like a piece of string being pulled from both ends,” he says. “Sometimes, I think it would be better to be dead than to have done the things I’ve done. I know it would be better never to have talked to anyone.”</p>
+
+<p>Sometimes, though, Henry tries to imagine a better future for himself. “If someone out there decided to get involved and give me a chance to start a new life,” he says, “I would not waste it.” He pictures himself graduating from high school and living by the ocean and fishing off a pier with children of his own. His grandmother would live nearby, so she could hang out with his kids. He would work in construction. Or maybe he would join the Army and get to travel the world. Whatever gets him away from the gang, and the <em>federales,</em> and allows him to live a little longer.</p>
+
+<p><em>ProPublica reporters Kavitha Surana and Ryan Gabrielson contributed to this story.</em></p>
+
+<figure class="waypoint-enabled">
+  <picture>
+    <source media="(min-width: 37.5em) and (-webkit-min-device-pixel-ratio: 1.3), (min-width: 37.5em) and (min-resolution: 124.8dpi)" srcset="https://features.propublica.org/ms-13/assets/images/generated/20180402-triste-portrait-1800*1200-a4902d.jpg">
+    <source media="(min-width: 37.5em)" srcset="https://features.propublica.org/ms-13/assets/images/generated/20180402-triste-portrait-900*600-a4902d.jpg">
+    <source media="(-webkit-min-device-pixel-ratio: 1.3), (min-resolution: 124.8dpi)" srcset="https://features.propublica.org/ms-13/assets/images/generated/20180402-triste-portrait-960*640-a4902d.jpg">
+    <img alt="" src="https://features.propublica.org/ms-13/assets/images/generated/20180402-triste-portrait-480*320-a4902d.jpg">
+</picture>
+  <figcaption>Henry thought that talking to the police would help him get out of MS-13. Instead, his cooperation put him on a path to deportation and his likely death. <span class="credit">(Demetrius Freeman for ProPublica)</span></figcaption>
+</figure>
+
+<section class="editors-note">
+  <h3>Editor’s&nbsp;note</h3>
+  <p>This story provides an intimate, revealing look into law enforcement’s war on MS-13, the Central American gang held out by President Donald Trump as a national public safety priority and embodiment of the consequences of illegal immigration. The subject of the story, an informant sold out by authorities, was in significant danger before publication — marked for death by a gang already suspicious that he helped the police. He decided to take on additional risk in telling the story, in hopes that someone would read it and help him. “This is basically my final option,” he told reporter Hannah Dreier. “I know not everyone wants to help a person trying to get away from the gang. When you don’t get help, the only way out of the gang is death.”</p>
+  <p>We wrestled with how to balance his desire to tell his story with the threat to his life, and made some decisions after discussions with him and his attorney Bryan Johnson. To lend authority to his story, we are using his real first name, Henry, and real gang name, Triste. We withheld his last name and took his photo in a way that did not identify his face. We made clear to him and his attorney that the story would run on ProPublica and in New York magazine, and would be told in a video that would be circulated on social media. Henry wants his story out there. He agreed to meet with Dreier twice in ICE custody, and called her from his jail ward dozens of times in the weeks that followed, whispering into the receiver as other MS-13 members tried to eavesdrop. He let her copy his cellphone to comb through years of text and Facebook messenger conversations as well as the exchanges he had with his handler. And he helped her make a glossary of Spanish gang slang so that she could understand the coded text and voice messages he exchanged with other MS-13 members. “To put it simply, I feel betrayed,” he said. “This could help people understand what it’s like to try to get away from the gang. People think they know, but they can’t imagine what’s it’s really like to live this.”</p>
+</section>
+
+					<div id="article-bottom"></div>
+					<div class="author-bio">
+  <a href="https://www.propublica.org/people/hannah-dreier/"><picture>
+    <source media="(-webkit-min-device-pixel-ratio: 1.3), (min-resolution: 124.8dpi)" srcset="https://features.propublica.org/ms-13/assets/images/generated/hannah-dreier-600*600-9e5456.jpg">
+    <img alt="" src="https://features.propublica.org/ms-13/assets/images/generated/hannah-dreier-360*360-9e5456.jpg">
+</picture></a>
+  <p><a href="https://www.propublica.org/people/hannah-dreier">Hannah Dreier</a> covers immigration for ProPublica. She is focusing this year on intersection between criminal investigation and immigration enforcement.</p>
+  <p><a class="contact" href="mailto:hannah.dreier@propublica.org">hannah.dreier@propublica.org</a> <a class="contact" href="https://twitter.com/hannahdreier">@hannahdreier</a></p>
+</div>
+<div class="author-bio">
+  <p>Design and production by <a href="https://www.propublica.org/people/rob-weychert">Rob Weychert</a> and <a href="https://www.propublica.org/people/jillian-kumagai">Jillian Kumagai</a>. Illustrations by Nika Kobaidze for ProPublica.</p>
+</div>
+
+<hr>
+
+				</div><!-- end .content -->
+
+				<footer class="end-matter">
+					
+
+<div class="email-signup">
+    <form action="https://signup.propublica.org/newsletter/turing" method="post">
+        <div class="form-group">
+            <label for="email-signup-input-email">Sign up to get ProPublica’s investigations delivered to your inbox.</label>
+            <input name="email" class="required email" id="email-signup-input-email" onfocus="recaptchaInit()" type="email" placeholder="you@example.com" value="">
+            <input name="target" type="hidden" value="l/125411/2017-04-27/3zxtsb">
+            <input name="success_location" type="hidden" value="https://www.propublica.org/forms/thankyou">
+            <input name="origin_location" type="hidden" value="https://www.propublica.org/article/i-am-some-fake-article-or-am-i">
+            <input name="error_location" type="hidden" value="https://www.propublica.org/forms/error">
+        </div>
+        <input class="button g-recaptcha" id="email-signup-input-subscribe" type="submit" value="Subscribe">
+    </form>
+    <small>This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a> apply.</small>
+</div>
+<!-- end email signup form -->
+
+
+
+					
+				    <section id="comments">
+	<div id="disqus_thread"></div>
+	<!-- <script>
+		var disqus_shortname = 'propublica';
+		var disqus_url = 'https://features.propublica.org/ms-13/a-betrayal-ms13-gang-police-fbi-ice-deportation/';
+		var disqus_title = 'A Betrayal';
+		var disqus_identifier = '142033';
+
+		/* * * DON'T EDIT BELOW THIS LINE * * */
+		(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		})();
+	</script> -->
+	<noscript>
+		&amp;lt;p&amp;gt;Please enable JavaScript to view the &amp;lt;a href="http://disqus.com/?ref_noscript"&amp;gt;comments powered by Disqus.&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
+	</noscript>
+	<p><a class="dsq-brlink" href="https://disqus.com">Comments powered by <span class="logo-disqus">Disqus</span></a></p>
+</section><!-- end #comments -->
+
+					
+				</footer><!-- end .end-matter -->
+
+			</div><!-- end .wrapper -->
+
+		</article>
+
+	</main><!-- end main[role="main"] -->
+
+
+    <footer role="contentinfo"></footer>
+    <!-- end footer[role="contentinfo"] -->
+
+    <!-- start footer scripts -->
+    <!-- <script src="https://features.propublica.org/ms-13/assets/js/main.js?20190804175838"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdI1rAUAAAAACI0GsFv-yRpC0tPF5ECiIMDUz2x" defer="" async=""></script> -->
+    <!-- <script>
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6LdI1rAUAAAAACI0GsFv-yRpC0tPF5ECiIMDUz2x', {
+                action: 'pageView'
+            });
+        });
+
+        function recaptchaInit() {
+            grecaptcha.execute('6LdI1rAUAAAAACI0GsFv-yRpC0tPF5ECiIMDUz2x', {
+                action: 'formSubmit'
+            }).then(function(token) {
+                $(".g-recaptcha").each(function() {
+                    var object = $(this);
+                    var myForm = object.parents('form').first();
+                    if (!(myForm.find("[name='g-recaptcha-response']").length)) {
+                        $('<input>').attr({
+                            type: 'hidden',
+                            value: token,
+                            name: 'g-recaptcha-response'
+                        }).appendTo(myForm);
+                    }
+                    if (!(myForm.find("[name='vthree']").length)) {
+                        $('<input>').attr({
+                            type: 'hidden',
+                            value: 'true',
+                            name: 'vthree'
+                        }).appendTo(myForm);
+                    }
+                });
+            });
+        }
+    </script> -->
+    <!-- end footer scripts -->
+
+
+
+
+<div style="position:fixed; top:0; left:0; overflow:hidden;"><input id="focus_retriever" style="position:absolute; left:-300px;" type="text" value=""></div>
+<!-- <script language="javascript" src="//static.chartbeat.com/js/chartbeat.js" type="text/javascript"></script>
+<script id="gtm-facebook-twitter-listeners" type="text/javascript">function checkIfSocialExists(a){"undefined"!==typeof twttr&&"undefined"!==typeof FB?bindSocial():30>a&&setTimeout(function(){checkIfSocialExists(a+1)},500)}checkIfSocialExists(0);function socialTrack(a,d,b,c){b="undefined"===typeof b?"":b;c||(c=google_tag_manager["GTM-M4BNWZ"].macro(29)||{});var e=c.parentNode||{},f=e.className;e=e.parentNode||{};e=e.className;var g=c.id;c=c.className;dataLayer.push({event:"socialShare",socialShare:{network:a,action:d,link:b,GPclasses:e,Pclasses:f,classes:c,ID:g}})}
+function bindSocial(){FB.Event.subscribe("edge.create",function(a,d){var b=a.toLowerCase();b=-1<b.indexOf("facebook.com/propublica")?"follow":"share";var c=a;socialTrack("facebook",b,c,d)});FB.Event.subscribe("edge.remove",function(a,d){var b=a.toLowerCase();b=-1<b.indexOf("facebook.com/propublica")?"unfollow":"unshare";var c=a;socialTrack("facebook",b,c,d)});twttr.ready(function(a){a.events.bind("tweet",trackTwitter);a.events.bind("follow",trackFollow)})}
+function trackTwitter(a){if(a){var d=google_tag_manager["GTM-M4BNWZ"].macro(30),b=a.target;a.target&&"IFRAME"===a.target.nodeName&&(d=extractParamFromUri(a.target.src,"url"));socialTrack("twitter","tweet",d,b)}}function extractParamFromUri(a,d){if(a){var b=new RegExp("[\\?\x26#]"+d+"\x3d([^\x26#]*)");b=b.exec(a);if(null!=b)return unescape(b[1])}}function trackFollow(a){a&&socialTrack("twitter","follow")};</script> -->
+</body>
+</html>
