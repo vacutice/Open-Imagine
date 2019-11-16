@@ -96,13 +96,13 @@
 
 ![](./32.png)
 
-![](./33.png)
+![33](./A9R1ftl8j3_1mnzo7o_1jxo.png)
 
 ![](./34.png)
 
 ![](./35.png)
 
-![](./36.png)
+![36](./A9Rnh47zm_1mnzo7r_1jxo.png)
 
 ![](./37.png)
 
